@@ -1,0 +1,511 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("./common/nav.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.max-width {
+  /* border: 1px solid blue; */
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+.min-width {
+  /* border: 11px solid blue; */
+  max-width: 1300px;
+  padding: 0 50px;
+  margin: auto;
+}
+
+/* ---banner style */
+.home {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  /* background-color: tomato; */
+  background-image: url(../images/banner22.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: ;
+}
+
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+  font-size: 27px;
+}
+
+.home .home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+  color: crimson;
+  font-weight: 500;
+}
+
+.home .home-content a button {
+  display: inline-block;
+  background-color: crimson;
+  color: #fff;
+  padding: 12px 36px;
+  font-size: 25px;
+  cursor: pointer;
+  border: 2px solid crimson;
+  border-radius: 15px;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.home .home-content a button:hover {
+  color: crimson;
+  background-color: transparent;
+}
+
+/* 標題底線控制 all similar content style code */
+section {
+  padding: 70px 0;
+}
+
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 3px;
+  background-color: black;
+}
+
+section .title::after {
+  position: absolute;
+  font-size: 20px;
+  bottom: -5px;
+  left: 50%;
+  padding: 0 7px;
+  color: crimson;
+  transform: translateX(-50%);
+  background-color: rgb(255, 255, 255);
+}
+/* <section class="about" id="about"> */
+
+.about,
+.services,
+.our-food,
+.flavor {
+  font-family: "Poppins", sans-serif;
+}
+
+.about .title::after {
+  content: "best bbq";
+}
+.about .about-content {
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .about-content .left {
+  /* border: 1px solid red; */
+  width: 45%;
+}
+
+.about .about-content .left img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.about .about-content .right {
+  /* border: 1px solid rgb(0, 0, 0); */
+  font-size: 16px;
+  width: 55%;
+}
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about .about-content .right .text span {
+  color: crimson;
+}
+
+.about .about-content .right p {
+  text-align: justify;
+}
+.about .about-content .right a button {
+  display: inline-block;
+  background-color: crimson;
+  color: #fff;
+  padding: 10px 36px;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 2px solid crimson;
+  border-radius: 15px;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.about .about-content .right a button:hover {
+  background-color: transparent;
+  color: crimson;
+}
+/* food */
+
+.food {
+  width: 90%;
+  margin: auto;
+}
+.food img {
+  /* padding: 0 10px; */
+  width: 100%;
+  /* height: 200px; */
+}
+.slick-next {
+  font-size: 30px;
+  color: red;
+}
+/* food */
+
+/* sever the FLAVOR */
+.flavor {
+  height: 70vh;
+  background-image: url(/images/flavor.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.9;
+  align-items: center;
+  display: flex;
+}
+/* msk */
+.flavor-msk {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #260606;
+  opacity: 0.4;
+  z-index: -1;
+}
+.flavor .flavor-content {
+  /* border: 1px solid red; */
+  text-align: center;
+  font-size: 18px;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+.flavor .flavor-content::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  height: 2px;
+  background-color: #fff;
+  left: 0px;
+  bottom: -40px;
+}
+.flavor .flavor-content i {
+  color: white;
+}
+.flavor .flavor-content .fire-box {
+  /* border: 1px solid blue; */
+  display: inline-block;
+  padding: 15px 21px;
+  background-color: #db9423;
+  border-radius: 50px;
+  z-index: 1;
+  position: relative;
+}
+.flavor .flavor-content .fire-box::after {
+  content: "";
+  position: absolute;
+  width: 255px;
+  height: 2px;
+  background-color: #fff;
+  left: 70px;
+  top: 50%;
+}
+.flavor .flavor-content .fire-box::before {
+  content: "";
+  position: absolute;
+  width: 255px;
+  height: 2px;
+  background-color: #fff;
+  right: 70px;
+  top: 50%;
+}
+.flavor .flavor-content h2 {
+  line-height: 1.66em;
+  font-size: 60px;
+  font-weight: 100;
+  color: #fff;
+}
+.flavor .flavor-content p {
+  color: #777777;
+  line-height: 60px;
+}
+
+/* sever the FLAVOR */
+
+/* services setion styling */
+
+.services {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+.services .title::before {
+  background-color: rgb(0, 0, 0);
+  width: 200px;
+}
+.services .title::after {
+  background-color: rgb(255, 255, 255);
+  content: "what we provide";
+}
+.services .services-content {
+  /* font-size: 0; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services .services-content .card {
+  /* border: 1px solid red; */
+  width: calc(33% - 20px);
+  background-color: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+}
+.services .services-content .card:hover {
+  background-color: crimson;
+}
+
+.services .services-content .card .box {
+  /* border: 1px solid red; */
+  transition: 0.3s ease;
+}
+.services .services-content .card:hover .box {
+  transform: scale(1.05);
+}
+
+.services .services-content .card i {
+  font-size: 50px;
+  color: crimson;
+  transition: 0.3s ease;
+}
+.services .services-content .card a {
+  color: white;
+  font-size: 10px;
+  transition: 3s ease;
+}
+.services .services-content .card p {
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+.services .services-content .card a:hover p {
+  /* color: rgb(134, 134, 134); */
+  border-bottom: 1.5px solid blue;
+}
+.services .services-content .card:hover i {
+  color: rgb(255, 255, 255);
+}
+.services .services-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+/* <section class="about" id="about"> */
+/* RWD */
+
+@media (max-width: 1300px) {
+  .home .max-width {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1104px) {
+  .about .about-content .left img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 947px) {
+  .about .about-content .left img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .home {
+    height: 50vh;
+  }
+  .home .home-content .text-2 {
+    font-size: 70px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 35px;
+  }
+
+  .home .home-content a button {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
+  .max-width {
+    max-width: 800px;
+  }
+  .about .about-content {
+    /* border: 1px solid blue; */
+    flex-direction: column;
+  }
+  .about .about-content .column {
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .about .about-content .left {
+    display: block;
+    width: auto;
+    /* border: 2px solid red; */
+    margin: 10px auto;
+  }
+  .about .about-content .right {
+    /* flex: 100%; */
+  }
+
+  /* card */
+  .services .services-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  .flavor {
+    background-attachment: scroll;
+    height: 60vh;
+  }
+}
+@media (max-width: 700px) {
+  .flavor {
+    height: 50vh;
+  }
+  .flavor .flavor-content h2 {
+    line-height: 1.66em;
+    font-size: 50px;
+    font-weight: 100;
+    color: #fff;
+  }
+  .flavor .flavor-content .fire-box::after {
+    width: 200px;
+  }
+  .flavor .flavor-content .fire-box::before {
+    width: 200px;
+  }
+}
+
+@media (max-width: 690px) {
+  .home .home-content .text-2 {
+    font-size: 60px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 32px;
+  }
+
+  .max-width {
+    padding: 0 23px;
+  }
+
+  .home .home-content a button {
+    font-size: 20px;
+    padding: 9px 25px;
+  }
+
+  /* card */
+  .services .services-content .card {
+    width: 100%;
+    /* margin-bottom: 20px; */
+  }
+
+  .food {
+    width: 100%;
+  }
+}
+@media (max-width: 643px) {
+  .flavor .flavor-content .fire-box::after {
+    display: none;
+  }
+  .flavor .flavor-content .fire-box::before {
+    display: none;
+  }
+  .flavor .flavor-content::after {
+    display: none;
+  }
+}
+@media (max-width: 590px) {
+  .about .about-content .left img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .home .home-content .text-2 {
+    font-size: 50px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 27px;
+  }
+}

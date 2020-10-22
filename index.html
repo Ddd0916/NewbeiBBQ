@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newbie</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+  </head>
+
+  <body>
+    <div class="Sign-in" id="Sign-in">
+      <div class="max-width-log">
+        <a href="#"><i class="fas fa-user"></i> login</a>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="">New<span>bie.</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home1</a></li>
+          <li><a href="#">Home2</a></li>
+          <li><a href="#">Party</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Store</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner -->
+    <section class="home" id="home">
+      <div class="max-width">
+        <div class="home-content">
+          <div class="text-1">NewbieBBQ</div>
+          <div class="text-2">The Best BBQ in</div>
+          <div class="text-3">The Best BBQ in<span>Taiwan</span></div>
+          <a href="#"><button>buy now</button></a>
+        </div>
+      </div>
+    </section>
+    <!-- banner -->
+
+    <!-- about us -->
+    <section class="about" id="about">
+      <div class="max-width">
+        <h2 class="title">About us</h2>
+        <div class="about-content">
+          <div class="column left">
+            <img src="./images/ourfood.jpg" alt="" />
+          </div>
+          <div class="column right">
+            <div class="text">
+              We are Newbie bbq The Best bbq in <span>Taiwan</span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim esse
+              consequuntur ipsum libero fugit commodi consectetur eius ullam
+              autem dignissimos veniam dolore, modi accusantium magnam nam
+              doloremque similique neque sequi, reiciendis doloribus possimus
+              at. Debitis, maiores corporis nostrum illo delectus optio minima
+              natus tempora omnis ea, sint harum saepe rem nam ab accusantium
+              ullam laboriosam voluptate dolorum, qui atque nobis!
+            </p>
+            <a href="#"><button>buy now</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about us -->
+
+    <!-- food 輪播圖 -->
+    <section class="our-food" id="our-food">
+      <div class="min-width">
+        <div class="food">
+          <img src="./images/index01.jpg" alt="" />
+          <img src="./images/index02.jpg" alt="" />
+          <img src="./images/index03.jpg" alt="" />
+          <img src="./images/index04.jpg" alt="" />
+          <img src="./images/index05.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- food 輪播圖 -->
+    <!-- sever the FLAVOR -->
+
+    <section class="flavor" id="flavor">
+      <div class="flavor-msk"></div>
+      <div class="max-width">
+        <div class="flavor-content">
+          <div class="fire-box"><i class="fas fa-fire"></i></div>
+          <h2>SAVOUR THE FLAVOR</h2>
+          <p>WITH FAMILY & FRIENDS</p>
+        </div>
+      </div>
+    </section>
+    <!-- sever the FLAVOR -->
+    <!-- our sever -->
+    <section class="services" id="services">
+      <div class="max-width">
+        <h2 class="title">OUR services</h2>
+        <div class="services-content">
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-democrat"></i>
+              <div class="text">Party</div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo
+                vitae dolorum vero commodi dignissimos voluptatem?
+              </p>
+              <a href=""><p>more..</p></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-shopping-cart"></i>
+              <div class="text">Online shopping</div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo
+                vitae dolorum vero commodi dignissimos voluptatem?
+              </p>
+              <a href=""><p>more..</p></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-hammer"></i>
+              <div class="text">Order a barbecue</div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo
+                vitae dolorum vero commodi dignissimos voluptatem?
+              </p>
+              <a href=""><p>more..</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our sever -->
+
+    <script src="./js/script.js"></script>
+    <script src="./js/slick.js"></script>
+    <script>
+      $(".food").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+      });
+    </script>
+  </body>
+</html>
