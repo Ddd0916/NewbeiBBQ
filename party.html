@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/party.css" />
+    <link rel="stylesheet" href="./css/common/nav.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+  </head>
+  <body>
+    <div class="Sign-in" id="Sign-in">
+      <div class="max-width-log">
+        <a href="#"><i class="fas fa-user"></i> login</a>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="/index.html">New<span>bie.</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home1</a></li>
+          <li><a href="#">Home2</a></li>
+          <li><a href="/party.html">Party</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Store</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <div id="hero">
+      <div class="container">
+        <div class="info">
+          <h1>welcome</h1>
+          <form action="test.php" method="post">
+            name：<br />
+            <input type="text" name="UserName" />
+            <br />
+            phone：<br /><input type="text" name="UserName" />
+            <br />
+            Email：
+            <br /><input type="text" name="UserName" />
+            <br />
+            　<input type="submit" value="Send out" class="submit-party" />
+          </form>
+          <div>收合</div>
+        </div>
+      </div>
+
+      <div class="party-slider">
+        <img src="./images/kappa.png" id="prev" />
+        <div class="preview">
+          <img src="./images/party/s01.png" class="active thumbanil" />
+          <img src="./images/party/s02.png" class="thumbanil" />
+          <img src="./images/party/s03.png" class="thumbanil" />
+          <img src="./images/party/s04.png" class="thumbanil" />
+          <img src="./images/party/s05.png" class="thumbanil" />
+        </div>
+        <img src="./images/kappa.png" id="next" />
+      </div>
+    </div>
+    <script>
+      var prev = document.getElementById("prev");
+      var next = document.getElementById("next");
+      var thumbanil = document.getElementsByClassName("thumbanil");
+      var hero = document.getElementById("hero");
+
+      var backgroundImg = new Array(
+        "images/01.png",
+        "images/02.png",
+        "images/03.png",
+        "images/04.png",
+        "images/05.png"
+      );
+      let i = 0;
+      next.onclick = function () {
+        if (i < 4) {
+          hero.style.backgroundImage = 'url("' + backgroundImg[i + 1] + '")';
+          thumbanil[i + 1].classList.add("active");
+          thumbanil[i].classList.remove("active");
+          i++;
+        }
+      };
+      prev.onclick = function () {
+        if (i > 0) {
+          hero.style.backgroundImage = 'url("' + backgroundImg[i - 1] + '")';
+          thumbanil[i - 1].classList.add("active");
+          thumbanil[i].classList.remove("active");
+          i--;
+        }
+      };
+    </script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

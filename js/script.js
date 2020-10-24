@@ -8,7 +8,7 @@
                  }
             })
           
-          // login縮小
+          // login消失
             $(window).scroll(function () {
               if (this.scrollY > 20) {
                   $ ('.Sign-in ').addClass("sticky");
@@ -17,6 +17,21 @@
                }
           })
           
+
+// typing Animation script
+          var typed = new Typed(".typing", {
+            strings: ["Taiwan", "Kaohsiung", "Tainan", "Changhua", "Chiayi"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop:true
+          });
+          var typed = new Typed(".typing-2", {
+            strings: ["Taiwan", "Kaohsiung", "Tainan", "Changhua", "Chiayi"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop:true
+          });
+
 
             //toggle menu/navbar script
             $('.menu-btn').click(function(){
