@@ -3,115 +3,565 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Newbie</title>
+
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <!-- <link rel="stylesheet" href="./css/index.css" /> -->
     <link rel="stylesheet" href="./css/store.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="./js/jquery-3.5.1.js"></script>
-    <script src="owl.carousel.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script scr="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
   </head>
+
   <body>
-    <body>
-        <div class="Sign-in" id="Sign-in">
-          <div class="max-width-log">
-            <a href="#"><i class="fas fa-user"></i> login</a>
-          </div>
+    <div class="Sign-in" id="Sign-in">
+      <div class="max-width-log">
+        <a href="#"><i class="fas fa-user"></i> login</a>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="/index.html">New<span>bie.</span></a>
         </div>
-    
-        <nav class="navbar">
-          <div class="max-width">
-            <div class="logo">
-              <a href="">New<span>bie.</span></a>
-            </div>
-            <ul class="menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Home1</a></li>
-              <li><a href="#">Home2</a></li>
-              <li><a href="/party.html">Party</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Store</a></li>
-            </ul>
-            <div class="menu-btn">
-              <i class="fas fa-bars"></i>
-            </div>
+        <ul class="menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="/party.html">Party</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="/store.html">Store</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner -->
+    <div class="banner" id="banner">
+      <div class="max-width">
+        <div class="banner-mak"></div>
+        <div class="banner-content">
+          <h1>STORE</h1>
+        </div>
+      </div>
+    </div>
+    <section class="store">
+      <div class="max-width-2">
+        <div class="store-content">
+          <div class="store-A">
+            <a href=""><p class="on">All</p></a>
+            <a href=""><p>Food</p></a>
+            <a href=""><p>Sauce</p></a>
+            <a href=""><p>T-shirt</p></a>
           </div>
-        </nav>
-        <!-- banner -->
-        <div class="banner">
-            <div class="container">
-                <div id="owl_slider" class="burger_slider owl-carouser">
-                    <div class="item">
-                        <img src="./images/bbq1.png" alt="">
-                        <div class="title">
-                            <span class="wow bounceInDown" data-wow-delay=0.1s>B</span>
-                            <span class="wow bounceInDown" data-wow-delay=0.2s>U</span>
-                            <span class="wow bounceInDown" data-wow-delay=0.3s>R</span>
-                            <span class="wow bounceInDown" data-wow-delay=0.4s>G</span>
-                            <span class="wow bounceInDown" data-wow-delay=0.5s>E</span>
-                            <span class="wow bounceInDown" data-wow-delay=0.6s>R</span>
-                        </div>
-                        <div class="cta wow bounceInUp" data-wow-delay=0.8s>SHOP NOW</div>
-                    </div>
-                    
-                    <div class="custome_nav">
-                        <div class="btn_prev">
-                            <img src="./images/kappa.png" alt="">
-                        </div>
-                        <div class="btn_next">
-                            <img src="./images/kappa.png" alt="">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./images/bbq1.png" alt="">
-                        <div class="title">
-                            <span class="wow bounceInDown" data-wow-delay=0.1s>B</span>
-                            <span class="wow bounceInDown" data-wow-delay=0.2s>U</span>
-                            <span class="wow bounceInDown" data-wow-delay=0.3s>R</span>
-                            <span class="wow bounceInDown" data-wow-delay=0.4s>G</span>
-                            <span class="wow bounceInDown" data-wow-delay=0.5s>E</span>
-                            <span class="wow bounceInDown" data-wow-delay=0.6s>R</span>
-                        </div>
-                        <div class="cta wow bounceInUp" data-wow-delay=0.8s>SHOP NOW</div>
-                    </div>
-                    
-                    <div class="custome_nav">
-                        <div class="btn_prev">
-                            <img src="./images/kappa.png" alt="">
-                        </div>
-                        <div class="btn_next">
-                            <img src="./images/kappa.png" alt="">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./images/bbq1.png" alt="">
-                        <div class="title">
-                            <span class="wow bounceInDown" data-wow-delay=0.1s>B</span>
-                            <span class="wow bounceInDown" data-wow-delay=0.2s>U</span>
-                            <span class="wow bounceInDown" data-wow-delay=0.3s>R</span>
-                            <span class="wow bounceInDown" data-wow-delay=0.4s>G</span>
-                            <span class="wow bounceInDown" data-wow-delay=0.5s>E</span>
-                            <span class="wow bounceInDown" data-wow-delay=0.6s>R</span>
-                        </div>
-                        <div class="cta wow bounceInUp" data-wow-delay=0.8s>SHOP NOW</div>
-                    </div>
-                    
-                    <div class="custome_nav">
-                        <div class="btn_prev">
-                            <img src="./images/kappa.png" alt="">
-                        </div>
-                        <div class="btn_next">
-                            <img src="./images/kappa.png" alt="">
-                        </div>
-                    </div>
+          <div class="store-B">
+            <a href="/index.html"><p class="on">Home</p></a>
+            <p>></p>
+            <p>All</p>
+          </div>
+          <div class="store-main">
+            <div class="store-link">
+              <div>
+                <ul>
+                  <li class="li-list active"><i class="fas fa-list"></i></li>
+                  <li class="li-grid"><i class="fas fa-grip-lines"></i></li>
+                </ul>
+              </div>
+              <div class="store-search">
+                <input type="search" value="search" />
+              </div>
+            </div>
+
+            <div class="view_main">
+              <div class="view_wrap list-view" style="display: none">
+                <!-- --------A------ -->
+                <div class="view_item">
+                  <div class="vi_left">
+                    <a href="">
+                      <img src="./images/index01.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="vi_right">
+                    <p class="title">Hamburg</p>
+                    <p class="content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat commodi necessitatibus maiores corporis accusamus
+                      mollitia.Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Repellat commodi necessitatibus maiores
+                      corporis accusamus mollitiaLorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Repellat commodi
+                      necessitatibus maiores corporis accusamus mollitia.Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat commodi necessitatibus maiores corporis accusamus
+                      mollitia..
+                    </p>
+                  </div>
+                  <div class="vi_money">
+                    <p>$999</p>
+                    <div class="btn">add cart</div>
+                  </div>
                 </div>
+                <!-- -------B------ -->
+                <div class="view_item">
+                  <div class="vi_left">
+                    <a href="">
+                      <img src="./images/index02.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="vi_right">
+                    <p class="title">BBQ</p>
+                    <p class="content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat commodi necessitatibus maiores corporis accusamus
+                      mollitia.
+                    </p>
+                  </div>
+                  <div class="vi_money">
+                    <p>$999</p>
+                    <div class="btn">add cart</div>
+                  </div>
+                </div>
+                <!-- -------C------ -->
+                <div class="view_item">
+                  <div class="vi_left">
+                    <a href="">
+                      <img src="./images/index03.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="vi_right">
+                    <p class="title">BBQ</p>
+                    <p class="content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat commodi necessitatibus maiores corporis accusamus
+                      mollitia.
+                    </p>
+                  </div>
+                  <div class="vi_money">
+                    <p>$999</p>
+                    <div class="btn">add cart</div>
+                  </div>
+                </div>
+                <!-- -------------- -->
+                <!-- -------D------ -->
+                <div class="view_item">
+                  <div class="vi_left">
+                    <a href="">
+                      <img src="./images/index04.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="vi_right">
+                    <p class="title">Hamburg</p>
+                    <p class="content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat commodi necessitatibus maiores corporis accusamus
+                      mollitia.
+                    </p>
+                  </div>
+                  <div class="vi_money">
+                    <p>$999</p>
+                    <div class="btn">add cart</div>
+                  </div>
+                </div>
+                <!-- -------------- -->
+                <!-- -------E------ -->
+                <div class="view_item">
+                  <div class="vi_left">
+                    <a href="">
+                      <img src="./images/index05.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="vi_right">
+                    <p class="title">groupA</p>
+                    <p class="content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat commodi necessitatibus maiores corporis accusamus
+                      mollitia.
+                    </p>
+                  </div>
+                  <div class="vi_money">
+                    <p>$999</p>
+                    <div class="btn">add cart</div>
+                  </div>
+                </div>
+                <!-- -------------- -->
+                <!-- -------F------ -->
+                <div class="view_item">
+                  <div class="vi_left">
+                    <a href="">
+                      <img src="./images/index06.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="vi_right">
+                    <p class="title">BBQ</p>
+                    <p class="content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat commodi necessitatibus maiores corporis accusamus
+                      mollitia.
+                    </p>
+                  </div>
+                  <div class="vi_money">
+                    <p>$999</p>
+                    <div class="btn">add cart</div>
+                  </div>
+                </div>
+                <!-- -------------- -->
+                <div class="view_item">
+                  <div class="vi_left">
+                    <a href="">
+                      <img src="./images/index07.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="vi_right">
+                    <p class="title">BBQ</p>
+                    <p class="content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat commodi necessitatibus maiores corporis accusamus
+                      mollitia.
+                    </p>
+                  </div>
+                  <div class="vi_money">
+                    <p>$999</p>
+                    <div class="btn">add cart</div>
+                  </div>
+                </div>
+                <!-- -------------- -->
+                <div class="view_item">
+                  <div class="vi_left">
+                    <a href="">
+                      <img src="./images/index08.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="vi_right">
+                    <p class="title">French fries</p>
+                    <p class="content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat commodi necessitatibus maiores corporis accusamus
+                      mollitia.
+                    </p>
+                  </div>
+                  <div class="vi_money">
+                    <p>$999</p>
+                    <div class="btn">add cart</div>
+                  </div>
+                </div>
+                <!-- -------------- -->
+                <div class="view_item">
+                  <div class="vi_left">
+                    <a href="">
+                      <img src="./images/index09.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="vi_right">
+                    <p class="title">French fries + salad</p>
+                    <p class="content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat commodi necessitatibus maiores corporis accusamus
+                      mollitia.
+                    </p>
+                  </div>
+                  <div class="vi_money">
+                    <p>$999</p>
+                    <div class="btn">add cart</div>
+                  </div>
+                </div>
+                <!-- -------------- -->
+                <!-- -------------- -->
+                <div class="view_item">
+                  <div class="vi_left">
+                    <a href="">
+                      <img src="./images/index11.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="vi_right">
+                    <p class="title">juice</p>
+                    <p class="content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat commodi necessitatibus maiores corporis accusamus
+                      mollitia.
+                    </p>
+                  </div>
+                  <div class="vi_money">
+                    <p>$999</p>
+                    <div class="btn">add cart</div>
+                  </div>
+                </div>
+                <!-- -------------- -->
+                <!-- -------------- -->
+                <div class="view_item">
+                  <div class="vi_left">
+                    <a href="">
+                      <img src="./images/index12.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="vi_right">
+                    <p class="title">groupB</p>
+                    <p class="content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat commodi necessitatibus maiores corporis accusamus
+                      mollitia.
+                    </p>
+                  </div>
+                  <div class="vi_money">
+                    <p>$999</p>
+                    <div class="btn">add cart</div>
+                  </div>
+                </div>
+                <!-- -------------- -->
+                <!-- -------------- -->
+                <div class="view_item">
+                  <div class="vi_left">
+                    <a href="">
+                      <img src="./images/index13.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="vi_right">
+                    <p class="title">French fries</p>
+                    <p class="content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat commodi necessitatibus maiores corporis accusamus
+                      mollitia.
+                    </p>
+                  </div>
+                  <div class="vi_money">
+                    <p>$999</p>
+                    <div class="btn">add cart</div>
+                  </div>
+                </div>
+                <!-- -------------- -->
+                <!-- -------------- -->
+                <div class="view_item">
+                  <div class="vi_left">
+                    <a href="">
+                      <img src="./images/index15.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="vi_right">
+                    <p class="title">BBQ</p>
+                    <p class="content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat commodi necessitatibus maiores corporis accusamus
+                      mollitia.
+                    </p>
+                  </div>
+                  <div class="vi_money">
+                    <p>$999</p>
+                    <div class="btn">add cart</div>
+                  </div>
+                </div>
+                <!-- -------------- -->
+              </div>
+
+              <div class="view_wrap grid-view2">
+                <div class="view_wrap grid-view">
+                  <!-- --------A------ -->
+                  <div class="view_item">
+                    <div class="vi_left">
+                      <a href="">
+                        <img src="./images/index01.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="vi_right">
+                      <p class="title">Hamburg</p>
+                    </div>
+                    <div class="vi_money">
+                      <p>$999</p>
+                      <div class="btn">add cart</div>
+                    </div>
+                  </div>
+                  <!-- --------B------ -->
+                  <div class="view_item">
+                    <div class="vi_left">
+                      <a href="">
+                        <img src="./images/index02.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="vi_right">
+                      <p class="title">BBQ</p>
+                    </div>
+                    <div class="vi_money">
+                      <p>$999</p>
+                      <div class="btn">add cart</div>
+                    </div>
+                  </div>
+                  <!-- --------C------ -->
+                  <div class="view_item">
+                    <div class="vi_left">
+                      <a href="">
+                        <img src="./images/index03.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="vi_right">
+                      <p class="title">BBQ</p>
+                    </div>
+                    <div class="vi_money">
+                      <p>$999</p>
+                      <div class="btn">add cart</div>
+                    </div>
+                  </div>
+                  <!-- --------D------ -->
+                  <div class="view_item">
+                    <div class="vi_left">
+                      <a href="">
+                        <img src="./images/index04.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="vi_right">
+                      <p class="title">Hamburg</p>
+                    </div>
+                    <div class="vi_money">
+                      <p>$999</p>
+                      <div class="btn">add cart</div>
+                    </div>
+                  </div>
+                  <!-- --------E------ -->
+                  <div class="view_item">
+                    <div class="vi_left">
+                      <a href="">
+                        <img src="./images/index05.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="vi_right">
+                      <p class="title">groupA</p>
+                    </div>
+                    <div class="vi_money">
+                      <p>$999</p>
+                      <div class="btn">add cart</div>
+                    </div>
+                  </div>
+                  <!-- --------F------ -->
+                  <div class="view_item">
+                    <div class="vi_left">
+                      <a href="">
+                        <img src="./images/index06.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="vi_right">
+                      <p class="title">BBQ</p>
+                    </div>
+                    <div class="vi_money">
+                      <p>$999</p>
+                      <div class="btn">add cart</div>
+                    </div>
+                  </div>
+                  <!-- --------A------ -->
+                  <div class="view_item">
+                    <div class="vi_left">
+                      <a href="">
+                        <img src="./images/index08.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="vi_right">
+                      <p class="title">French fries</p>
+                    </div>
+                    <div class="vi_money">
+                      <p>$999</p>
+                      <div class="btn">add cart</div>
+                    </div>
+                  </div>
+                  <!-- --------B------ -->
+                  <div class="view_item">
+                    <div class="vi_left">
+                      <a href="">
+                        <img src="./images/index09.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="vi_right">
+                      <p class="title">French fries + salad</p>
+                    </div>
+                    <div class="vi_money">
+                      <p>$999</p>
+                      <div class="btn">add cart</div>
+                    </div>
+                  </div>
+                  <!-- --------C------ -->
+                  <div class="view_item">
+                    <div class="vi_left">
+                      <a href="">
+                        <img src="./images/index10.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="vi_right">
+                      <p class="title">Hamburg</p>
+                    </div>
+                    <div class="vi_money">
+                      <p>$999</p>
+                      <div class="btn">add cart</div>
+                    </div>
+                  </div>
+                  <!-- --------D------ -->
+                  <div class="view_item">
+                    <div class="vi_left">
+                      <a href="">
+                        <img src="./images/index11.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="vi_right">
+                      <p class="title">juice</p>
+                    </div>
+                    <div class="vi_money">
+                      <p>$999</p>
+                      <div class="btn">add cart</div>
+                    </div>
+                  </div>
+                  <!-- --------E------ -->
+                  <div class="view_item">
+                    <div class="vi_left">
+                      <a href="">
+                        <img src="./images/index12.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="vi_right">
+                      <p class="title">groupB</p>
+                    </div>
+                    <div class="vi_money">
+                      <p>$999</p>
+                      <div class="btn">add cart</div>
+                    </div>
+                  </div>
+                  <!-- --------E------ -->
+                  <div class="view_item">
+                    <div class="vi_left">
+                      <a href="">
+                        <img src="./images/index13.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="vi_right">
+                      <p class="title">French fries</p>
+                    </div>
+                    <div class="vi_money">
+                      <p>$999</p>
+                      <div class="btn">add cart</div>
+                    </div>
+                  </div>
+                  <!-- --------E------ -->
+                  <div class="view_item">
+                    <div class="vi_left">
+                      <a href="">
+                        <img src="./images/index15.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="vi_right">
+                      <p class="title">BBQ</p>
+                    </div>
+                    <div class="vi_money">
+                      <p>$999</p>
+                      <div class="btn">add cart</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <script>
-            
-        </script>
+      </div>
+    </section>
+
+    <script src="./js/store.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/slick.js"></script>
   </body>
 </html>

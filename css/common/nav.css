@@ -99,7 +99,7 @@
 }
 
 .navbar .menu li a:hover {
-  color: crimson;
+  color: rgb(0, 0, 0);
 }
 
 .navbar.sticky .menu li a:hover {

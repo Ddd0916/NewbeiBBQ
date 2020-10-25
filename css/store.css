@@ -7,17 +7,310 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+.max-width {
+  /* border: 1px solid blue; */
+}
+.max-width-2 {
+  padding: 0 80px;
+}
+/* 標題底線控制 all similar content style code */
+section {
+  padding: 60px 0;
+}
+
+.banner {
+  font-family: "Poppins", sans-serif;
+}
 .banner {
   width: 100%;
-  height: 100vh;
-  background-color: crimson;
+  height: 60vh;
+  background-image: url(/images/03.jpg);
+  /* background-size: cover; */
+  background-position: center;
   font-size: 16px;
+  position: relative;
 }
-.owl-carousel {
-  border: 3px solid rgb(0, 0, 0);
-  height: 100vh;
+.banner-mak {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(27, 14, 17);
+  opacity: 0.7;
 }
-.owl-carousel .item {
-  width: 100px;
-  border: 1px solid red;
+.banner-content {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 60vh;
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: ; */
+}
+.banner-content h1 {
+  font-size: 50px;
+  color: crimson;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+  line-height: 0.7em;
+  outline: none;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: crimson;
+    text-shadow: none;
+  }
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px crimson, 0 0 20px crimson, 0 0 40px crimson,
+      0 0 60px crimson, 0 0 80px crimson, 0 0 160px crimson;
+  }
+}
+
+/* store style */
+.store {
+  font-family: "Poppins", sans-serif;
+  /* border: 1px solid red; */
+  position: relative;
+  min-height: 100vh;
+  /* list-style: none; */
+}
+.store-content {
+  /* border: 2px solid rgb(0, 0, 0); */
+  min-height: 100vh;
+}
+.store .max-width-2 .store-content img {
+  width: 70%;
+}
+.store .max-width-2 .store-content .store-A {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 80%;
+  padding: 10px;
+}
+.store .max-width-2 .store-content .store-A p {
+  padding: 0 10px;
+  color: black;
+}
+.store .max-width-2 .store-content .store-A .on {
+  color: crimson;
+}
+
+.store .max-width-2 .store-content .store-B {
+  display: flex;
+  padding: 10px;
+}
+.store .max-width-2 .store-content .store-B p {
+  padding: 0 10px;
+  color: crimson;
+}
+.store .max-width-2 .store-content .store-B .on {
+  color: black;
+}
+
+.store .max-width-2 .store-content .store-main {
+  /* border: 3px solid red; */
+  padding: 0 20px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.store .max-width-2 .store-content .store-main .store-link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(207, 207, 207);
+  padding: 15px;
+}
+.store .max-width-2 .store-content .store-main .store-link .store-search {
+  display: flex;
+}
+.store .max-width-2 .store-content .store-main .store-link .store-search input {
+  height: 23px;
+}
+
+.store .max-width-2 .store-content .store-main .store-link ul {
+  /* border: 1px solid red; */
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+}
+.store .max-width-2 .store-content .store-main .store-link ul li {
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.store .max-width-2 .store-content .store-main .store-link ul li:hover,
+.store .max-width-2 .store-content .store-main .store-link ul li.active {
+  color: crimson;
+}
+.store .max-width-2 .store-content .store-main .view_main {
+  /* border: 1px solid rgb(0, 0, 0); */
+  width: 100%;
+  /* background-color: #ddd; */
+  margin: 5px auto;
+  /* padding: 10px; */
+}
+
+.store
+  .max-width-2
+  .store-content
+  .store-main
+  .view_main
+  .list-view
+  .view_item {
+  /* border: 1px solid crimson; */
+  margin: 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.vi_money {
+  /* border: 2px solid rgb(255, 255, 255); */
+  width: 180px;
+  text-align: center;
+}
+.vi_money p {
+  text-align: right;
+  padding: 10px 0;
+}
+.vi_money .btn {
+  background-color: #000000;
+  color: #ddd;
+  padding: 8px 5px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 200;
+}
+.vi_money .btn:hover {
+  background-color: #353f34;
+}
+
+.vi_right {
+  /* background-color: crimson; */
+  width: 80%;
+  /* margin-right: 10px; */
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  overflow: hidden;
+}
+.view_main .list-view .vi_left {
+  width: 30%;
+}
+.view_item .title {
+  /* border: 1xpx solid red; */
+  font-weight: 1600;
+}
+.view_item .content {
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 200;
+}
+
+.store .max-width-2 .store-content .store-main .view_main img {
+  width: 90%;
+}
+
+.grid-view2 {
+  /* border: 1px solid blue; */
+  /* display: none; */
+}
+
+.grid-view {
+  /* display: none; */
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid-view .view_item {
+  width: calc((100% - 60px) / 4);
+  /* border: 3px solid #0e0f0e; */
+  padding: 10px 0;
+  text-align: center;
+  /* margin: auto; */
+  margin-bottom: 10px;
+  margin-right: 20px;
+  /* display: inline-block; */
+}
+.grid-view .view_item:nth-child(4n) {
+  margin-right: 0px;
+}
+.grid-view .view_item .vi_right {
+  /* border: 1px solid red; */
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.grid-view .view_item .vi_left {
+  margin-bottom: 10px;
+}
+
+.grid-view .view_item .vi_money {
+  /* width: 100px; */
+  width: 80%;
+  margin: auto;
+}
+.grid-view .view_item .vi_money p {
+  text-align: center;
+}
+
+/* RWD */
+@media (max-width: 1200px) {
+  .max-width-2 {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .grid-view .view_item {
+    width: calc((100% - 20px) / 2);
+  }
+  .grid-view .view_item:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .view_main .list-view .vi_left {
+    width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .vi_money {
+    width: calc(100% - 60%);
+  }
+  .view_main .list-view .vi_left {
+    width: 60%;
+  }
 }

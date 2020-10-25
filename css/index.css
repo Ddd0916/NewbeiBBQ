@@ -366,16 +366,21 @@ section .title::after {
 .services .services-content .services-left p {
   font-size: 20px;
   font-style: italic;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   display: -webkit-box;
   -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
   white-space: normal;
   overflow: hidden;
 }
+.services .services-content .services-left p span {
+  font-style: normal;
+  color: crimson;
+}
+
 .services .services-content .services-left img {
   width: 150px;
-  margin: auto;
+  margin: 10px auto;
   display: flex;
 }
 
@@ -394,7 +399,7 @@ section .title::after {
 /* guests style */
 .guests {
   min-height: 70vh;
-  background-image: url(/images/people/peopleA.png);
+  background-image: url(../images/people/peopleA.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -582,8 +587,9 @@ section .title::after {
   }
   .guests h1 {
     font-size: 50px;
-    color: crimson;
-    font-weight: 500;
+  }
+  .guests h2 {
+    font-size: 20px;
   }
 }
 
@@ -636,6 +642,12 @@ section .title::after {
   .home .home-content a button {
     font-size: 20px;
     padding: 9px 25px;
+  }
+  .guests h1 {
+    font-size: 30px;
+  }
+  .guests h2 {
+    font-size: 10px;
   }
 
   /* card */
