@@ -24,7 +24,7 @@
 /* ---banner style */
 .home {
   position: relative;
-  height: 100vh;
+  height: 95vh;
   display: flex;
   /* background-color: tomato; */
   background-image: url(../images/banner22.png);
@@ -33,29 +33,16 @@
   background-position: center;
   color: white;
   font-family: "Ubuntu", sans-serif;
+  /* border: 1px solid red; */
 }
 
-.home::after {
-  content: "";
+.home .banner-bottom {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 30px 1200px;
-  border-color: transparent transparent #00000038 transparent;
-}
-.home::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 60px 1200px;
-  border-color: transparent transparent #b4b4b449 transparent;
+  bottom: -5px;
+  width: 100%;
+  height: 61px;
+  background: url(../images/vanner7.png);
+  /* background-color: black; */
 }
 
 .home .max-width {
@@ -78,25 +65,25 @@
 }
 
 .home .home-content .text-3 span {
-  color: crimson;
+  color: #c00000;
   font-weight: 500;
 }
 
 .home .home-content a button {
   display: inline-block;
-  background-color: crimson;
+  background-color: #c00000;
   color: #fff;
   padding: 12px 36px;
   font-size: 25px;
   cursor: pointer;
-  border: 2px solid crimson;
+  border: 2px solid #c00000;
   border-radius: 15px;
   margin-top: 20px;
   transition: 0.3s ease;
 }
 
 .home .home-content a button:hover {
-  color: crimson;
+  color: #c00000;
   background-color: transparent;
 }
 
@@ -132,7 +119,7 @@ section .title::after {
   bottom: -5px;
   left: 50%;
   padding: 0 7px;
-  color: crimson;
+  color: #c00000;
   transform: translateX(-50%);
   background-color: rgb(255, 255, 255);
 }
@@ -180,7 +167,7 @@ section .title::after {
   margin-bottom: 10px;
 }
 .about .about-content .right .text span {
-  color: crimson;
+  color: #c00000;
 }
 
 .about .about-content .right p {
@@ -188,13 +175,13 @@ section .title::after {
 }
 .about .about-content .right a button {
   display: inline-block;
-  background-color: crimson;
+  background-color: #c00000;
   color: #fff;
   padding: 10px 36px;
   font-size: 25px;
   font-weight: 500;
   cursor: pointer;
-  border: 2px solid crimson;
+  border: 2px solid #c00000;
   border-radius: 15px;
   margin-top: 20px;
   transition: 0.3s ease;
@@ -202,7 +189,7 @@ section .title::after {
 
 .about .about-content .right a button:hover {
   background-color: transparent;
-  color: crimson;
+  color: #c00000;
 }
 /* food */
 
@@ -238,23 +225,19 @@ section .title::after {
 }
 .flavor-border {
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 60px 1200px 0 0;
-  opacity: 0.5;
-  border-color: #000000 transparent transparent transparent;
+  width: 100%;
+  height: 61px;
+  background: url(../images/vanner1.png);
 }
 .flavor-border2 {
   position: absolute;
-  top: 0;
+  bottom: -2px;
   left: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 35px 1200px 0 0;
-  opacity: 0.5;
-  border-color: #000000 transparent transparent transparent;
+  height: 61px;
+  width: 100%;
+  background: url(../images/vanner1-a.png);
 }
 
 /* msk */
@@ -358,9 +341,9 @@ section .title::after {
   /* border: 1px solid red; */
 }
 
-.services .services-content .services-left h1 {
+.services .services-content .services-left h2 {
   font-size: 35px;
-  color: crimson;
+  color: #c00000;
   margin-bottom: 20px;
 }
 .services .services-content .services-left p {
@@ -375,7 +358,7 @@ section .title::after {
 }
 .services .services-content .services-left p span {
   font-style: normal;
-  color: crimson;
+  color: #c00000;
 }
 
 .services .services-content .services-left img {
@@ -422,12 +405,12 @@ section .title::after {
   z-index: -1;
 }
 
-.guests h1 {
+.guests h2 {
   font-size: 60px;
-  color: crimson;
+  color: #c00000;
   font-weight: 500;
 }
-.guests h2 {
+.guests h3 {
   color: #fff;
 }
 .guests p {
@@ -456,8 +439,8 @@ section .title::after {
   padding: 10px;
 }
 .guests .guests-content .guests-A .guests-good {
-  border: 3px solid crimson;
-  color: crimson;
+  border: 3px solid #c00000;
+  color: #c00000;
   border-radius: 50px;
   display: inline-block;
   font-size: 30px;
@@ -482,12 +465,6 @@ section .title::after {
 }
 
 @media (max-width: 1200px) {
-  .flavor-border {
-    border-width: 60px 900px 0 0;
-  }
-  .flavor-border2 {
-    border-width: 30px 900px 0 0;
-  }
   .home::after {
     border-width: 0 0 30px 900px;
   }
@@ -506,14 +483,6 @@ section .title::after {
 @media (max-width: 991px) {
   .max-width {
     padding: 0 50px;
-  }
-  .flavor-border {
-    border-width: 40px 600px 0 0;
-    opacity: 0.2;
-  }
-  .flavor-border2 {
-    border-width: 20px 600px 0 0;
-    opacity: 0.5;
   }
 }
 
@@ -561,6 +530,15 @@ section .title::after {
   .about .about-content .right {
     /* flex: 100%; */
   }
+  .flavor .flavor-content .fire-box::after {
+    display: none;
+  }
+  .flavor .flavor-content .fire-box::before {
+    display: none;
+  }
+  .flavor .flavor-content::after {
+    display: none;
+  }
 
   /* card */
 
@@ -585,10 +563,10 @@ section .title::after {
   .guests .guests-content .guests-A {
     width: 50%;
   }
-  .guests h1 {
+  .guests h2 {
     font-size: 50px;
   }
-  .guests h2 {
+  .guests h3 {
     font-size: 20px;
   }
 }
@@ -643,10 +621,10 @@ section .title::after {
     font-size: 20px;
     padding: 9px 25px;
   }
-  .guests h1 {
+  .guests h2 {
     font-size: 30px;
   }
-  .guests h2 {
+  .guests h3 {
     font-size: 10px;
   }
 
@@ -662,15 +640,6 @@ section .title::after {
   }
 }
 @media (max-width: 643px) {
-  .flavor .flavor-content .fire-box::after {
-    display: none;
-  }
-  .flavor .flavor-content .fire-box::before {
-    display: none;
-  }
-  .flavor .flavor-content::after {
-    display: none;
-  }
 }
 @media (max-width: 590px) {
   .about .about-content .left img {

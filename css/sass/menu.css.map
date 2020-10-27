@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,GAAG;CAAG",
-    "sources": [
-        "menu.sass"
-    ],
-    "names": [],
-    "file": "menu.css"
-}

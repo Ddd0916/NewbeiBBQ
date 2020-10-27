@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 @import url("./common/nav.css");
+@import url("./common/banner.css");
 
 * {
   margin: 0;
@@ -18,77 +19,6 @@ section {
   padding: 60px 0;
 }
 
-.banner {
-  font-family: "Poppins", sans-serif;
-}
-.banner {
-  width: 100%;
-  height: 60vh;
-  background-image: url(/images/03.jpg);
-  /* background-size: cover; */
-  background-position: center;
-  font-size: 16px;
-  position: relative;
-}
-.banner-mak {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(27, 14, 17);
-  opacity: 0.7;
-}
-.banner-content {
-  /* border: 1px solid red; */
-  width: 100%;
-  height: 60vh;
-  font-size: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* z-index: ; */
-}
-.banner-content h1 {
-  font-size: 50px;
-  color: crimson;
-  text-transform: uppercase;
-  width: 100%;
-  text-align: center;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
-  line-height: 0.7em;
-  outline: none;
-  animation: animate 5s linear infinite;
-}
-@keyframes animate {
-  0%,
-  18%,
-  20%,
-  50.1%,
-  60%,
-  65.1%,
-  80%,
-  90.1%,
-  92% {
-    color: crimson;
-    text-shadow: none;
-  }
-  18%,
-  20%,
-  50.1%,
-  60%,
-  65%,
-  80.1%,
-  90%,
-  92.1%,
-  100% {
-    color: #fff;
-    text-shadow: 0 0 10px crimson, 0 0 20px crimson, 0 0 40px crimson,
-      0 0 60px crimson, 0 0 80px crimson, 0 0 160px crimson;
-  }
-}
-
 /* store style */
 .store {
   font-family: "Poppins", sans-serif;
@@ -105,11 +35,23 @@ section {
   width: 70%;
 }
 .store .max-width-2 .store-content .store-A {
+  position: relative;
   /* border: 1px solid red; */
   display: flex;
   width: 80%;
   padding: 10px;
 }
+
+.store .max-width-2 .store-content .store-A::after {
+  position: absolute;
+  content: "";
+  bottom: 6px;
+  left: 16px;
+  width: 230px;
+  height: 1px;
+  background: rgb(172, 172, 172);
+}
+
 .store .max-width-2 .store-content .store-A p {
   padding: 0 10px;
   color: black;
@@ -168,11 +110,8 @@ section {
   color: crimson;
 }
 .store .max-width-2 .store-content .store-main .view_main {
-  /* border: 1px solid rgb(0, 0, 0); */
   width: 100%;
-  /* background-color: #ddd; */
   margin: 5px auto;
-  /* padding: 10px; */
 }
 
 .store
@@ -236,6 +175,8 @@ section {
 
 .store .max-width-2 .store-content .store-main .view_main img {
   width: 90%;
+  border-radius: 3px;
+  transition: all 1s ease-out;
 }
 
 .grid-view2 {
