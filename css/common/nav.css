@@ -8,6 +8,9 @@
   transition: 0.3s ease;
   /* border: 1px solid rgb(163, 226, 14); */
 }
+.Sign-in .max-width-log a {
+  color: rgb(99, 99, 99);
+}
 
 .Sign-in.sticky {
   display: none;
@@ -15,7 +18,7 @@
 .max-width-log {
   /* border: 1px solid red; */
   max-width: 1300px;
-  padding: 0 80px;
+  padding: 0 180px;
   margin: auto;
   display: flex;
   justify-content: flex-end;
@@ -39,7 +42,7 @@
 }
 
 .menu-btn {
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 23px;
   cursor: pointer;
   display: none;
@@ -50,7 +53,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 30px 0;
+  padding-top: 30px;
+  /* border: 1px solid red; */
   background-color: transparent;
   font-family: "Ubuntu", sans-serif;
   transition: 0.3s ease;
@@ -58,9 +62,10 @@
   /* box-shadow: #fff; */
 }
 .navbar.sticky {
-  padding: 15px 0;
-  background: #db9423;
-  color: black;
+  padding-top: 15px;
+  background: #ffffff;
+  border-bottom: 1px solid rgb(122, 122, 122);
+  color: rgb(255, 255, 255);
 }
 
 .navbar .max-width {
@@ -69,24 +74,33 @@
   justify-content: space-between;
 }
 
+.logo a img {
+  width: 100%;
+}
+.logo {
+  width: 70px;
+  /* height: 50px; */
+  height: auto;
+  transition: 0.3s ease;
+  /* border: 1px solid red; */
+}
+.navbar .logo.sticky {
+  /* width: 40px; */
+  padding: 10px 0;
+}
+
 .navbar .logo a {
+  /* display: none; */
   color: white;
   /* border: 1px solid red; */
-  font-size: 35px;
+  font-size: 1px;
   font-weight: 600;
 }
 
-.navbar .logo a span {
-  color: #c00000;
-  transition: 0.3s ease;
-}
-
-.navbar.sticky .logo a span {
-  color: #fff;
-  /* transition: 0.3s ease; */
-}
 .navbar .menu .on {
-  border-bottom: 2px solid rgb(255, 255, 255);
+  /* color: #c19d60; */
+  /* background-color: ; */
+  border-bottom: 2px solid rgb(255, 81, 0);
 }
 .navbar .menu .on:hover {
   border-bottom: 2px solid rgb(0, 0, 0);
@@ -94,15 +108,18 @@
 .navbar .menu li {
   list-style: none;
   display: inline-block;
+  margin-left: 25px;
 }
 
 .navbar .menu li a {
   /* border: 1px solid red; */
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 18px;
   font-weight: 500;
-  margin-left: 25px;
   transition: all 0.3s ease;
+}
+.navbar .menu li a:first-child {
+  /* margin-left: 0; */
 }
 
 .navbar .menu li a:hover {
@@ -134,7 +151,7 @@
     width: 100%;
     left: -100%;
     top: 0;
-    background-color: crimson;
+    background-color: rgb(255, 255, 255);
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
@@ -151,6 +168,7 @@
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
+    /* color: #fff; */
   }
 }
 @media (max-width: 690px) {

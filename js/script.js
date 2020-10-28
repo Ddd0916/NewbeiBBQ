@@ -8,32 +8,30 @@ $(document).ready(function ()
           });
           
             $(window).scroll(function () {
-                if (this.scrollY > 20) {
-                    $ ('.navbar').addClass("sticky");
+                if (this.scrollY > 90) {
+                  $('.navbar_B').addClass("sticky");
+                  $('.navbar_A').addClass("sticky");
+                  $ ('.logo ').addClass("sticky");
                 } else {
-                   $ ('.navbar').removeClass("sticky");
+                  $('.navbar_B').removeClass("sticky");
+                  $('.navbar_A').removeClass("sticky");
+                  $('.logo ').removeClass("sticky");
+                  
                  }
             })
           
-          // login消失
-            $(window).scroll(function () {
-              if (this.scrollY > 20) {
-                  $ ('.Sign-in ').addClass("sticky");
-              } else {
-                 $ ('.Sign-in ').removeClass("sticky");
-               }
-          })
+          
           
 
 // typing Animation script
           var typed = new Typed(".typing", {
-            strings: ["Taiwan", "Kaohsiung", "Tainan", "Changhua", "Chiayi"],
+            strings: ["Hamburg", "Barbecue", "Dessert", "Drink", "Chiayi"],
             typeSpeed: 100,
             backSpeed: 60,
             loop:true
           });
           var typed = new Typed(".typing-2", {
-            strings: ["Taiwan", "Kaohsiung", "Tainan", "Changhua", "Chiayi"],
+            strings: ["Hamburg", "Barbecue", "Dessert", "Drink", "Chiayi"],
             typeSpeed: 100,
             backSpeed: 60,
             loop:true
@@ -41,5 +39,5 @@ $(document).ready(function ()
 
 
            
-      
+        });
  

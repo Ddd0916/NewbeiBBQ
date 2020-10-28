@@ -1,0 +1,17 @@
+.footer {
+  background-color: black;
+  position: sticky;
+  bottom: 0;
+  z-index: -10;
+  color: #fff;
+  min-height: 579px;
+}
+.footer .max-width2 .footer-content {
+  border: 1px solid red;
+  height: 579px;
+}
+.max-width3 {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}

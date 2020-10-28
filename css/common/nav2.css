@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.navbar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  /* position: relative; */
+  /* border: 1px solid red; */
+  background-color: transparent;
+  /* text-transform: uppercase; */
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.navbar .max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.navbar .max-width .navbar_A {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 15px 0;
+  /* border: 1px solid yellow; */
+  font-family: "Playfair Display", cursive;
+  transition: all 3s ease;
+}
+
+.navbar .max-width .navbar_A.sticky {
+  opacity: 0;
+  display: none;
+  transition: all 3s ease;
+}
+
+.navbar .max-width .navbar_A p {
+  color: #c19d60;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.navbar .max-width .navbar_A p:hover {
+  color: #c19d60;
+}
+
+.navbar .max-width .navbar_A span {
+  color: #fff;
+  cursor: pointer;
+  padding-left: 5px;
+  font-family: "Playfair Display", cursive;
+}
+
+.navbar .max-width .navbar_A div {
+  float: right;
+  /* border: 1px solid red; */
+  width: auto;
+  margin-left: 15px;
+}
+
+.navbar .max-width .navbar_B {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  /* padding: 10px 15px; */
+  justify-content: space-around;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar .max-width .navbar_B.sticky {
+  border: 1px solid #eee;
+  /* padding: 8px 15px; */
+}
+.navbar .max-width .navbar_B .logo {
+  width: 100px;
+}
+
+.navbar .max-width .navbar_B .logo img {
+  width: 100%;
+}
+
+.navbar .max-width .navbar_B .navbar_F {
+  border: 12px rgb(0, 255, 115);
+}
+
+.navbar .max-width .navbar_B div {
+  /* height: 100%; */
+  cursor: pointer;
+  /* border: 1px solid green; */
+}
+
+.navbar .max-width .navbar_B .navbar_F .menu {
+  display: flex;
+  /* position: relative; */
+  transition: all 0.3s ease;
+}
+.navbar .max-width .navbar_B .navbar_F .menu li {
+  list-style: none;
+  margin-left: 15px;
+}
+.navbar .max-width .navbar_B .navbar_F .menu li a {
+  color: #292929;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.navbar .max-width .navbar_B .navbar_F .menu li a:hover {
+  color: #c19d60;
+}
+
+.navbar .max-width .navbar_B .navbar_F .menu li a .tag {
+}
+.menu-on {
+  border-bottom: 1px solid #c19d60;
+  /* color: #c19d60; */
+}
+
+.menu-btn {
+  display: none;
+  cursor: pointer;
+}
+.navbar_C {
+  border: 1px solid rgba(110, 110, 110, 0.103);
+  padding: 25px;
+  position: relative;
+
+  transition: all 0.3s;
+
+  overflow: hidden;
+}
+.navbar_C span {
+  z-index: 60;
+}
+.navbar_C::after,
+.navbar_C::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #c19d6050;
+  transition: all 0.3s;
+  transform: translate(35%, 190%) rotate(-30deg);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.navbar_C::after {
+  transition-delay: 0.2s;
+}
+.navbar_C:hover {
+  color: rgb(0, 0, 0);
+}
+.navbar_C:hover::before,
+.navbar_C:hover::after {
+  transform: translate(0, 0);
+}
+
+.navbar_E i {
+  color: #000000;
+  transition: 0.5s e;
+}
+.navbar_E i:hover {
+  font-size: 30px;
+}
+
+.navbar .max-width .navbar_B .navbar_F .menu.active {
+  /* opacity: 1; */
+  right: 0;
+  transition: all 0.3s ease;
+}
+
+/* RWD */
+@media (max-width: 948px) {
+  .navbar .max-width .navbar_B .navbar_F .menu {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 947px) {
+  .navbar .max-width .navbar_B .navbar_F .menu {
+    /* opacity: 0; */
+    /* z-index: -100; */
+    flex-direction: column;
+    bottom: -277px;
+    right: -100%;
+    /* top: 100px; */
+    background-color: #292929;
+    position: absolute;
+    padding: 5px;
+  }
+  .menu-btn i.active::before {
+    /* content: "\f00d"; */
+  }
+  .navbar .max-width .navbar_B .navbar_F .menu li {
+    padding: 15px 10px;
+    /* height: 50px; */
+    width: 300px;
+    text-align: left;
+    /* border-bottom: 1px solid red; */
+  }
+  .navbar .max-width .navbar_B .navbar_F .menu li a {
+    color: #dddddd;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+@media screen and (max-width: 750px) {
+  .navbar .max-width {
+    padding: 0;
+  }
+}
+
+@media (max-width: 570px) {
+  .navbar .max-width {
+    padding: 0;
+  }
+  .navbar .max-width .navbar_A {
+    display: none;
+  }
+  .navbar .max-width .navbar_B .navbar_F .menu {
+    /* right: 30px; */
+  }
+}
