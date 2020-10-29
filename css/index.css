@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 @import url("./common/nav2.css");
+@import url("./common/footer.css");
 
 * {
   margin: 0;
@@ -68,7 +69,7 @@
 
 .home .home-content .text-1 {
   font-size: 16px;
-  font-family: "Playfair Display", cursive;
+  /* font-family: "Playfair Display", cursive; */
   font-style: italic;
   color: #fff;
   position: relative;
@@ -107,7 +108,7 @@
   border: 1px solid #db9423;
   color: #fff;
   margin-top: 40px;
-  font-family: "Playfair Display", cursive;
+  /* font-family: "Playfair Display", cursive; */
   font-weight: 600;
   font-size: 13px;
   transition: all 200ms linear;
@@ -165,6 +166,11 @@ section .title::after {
 .flavor,
 .guests {
   font-family: "Poppins", sans-serif;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
 }
 
 .about .title::after {
@@ -225,7 +231,7 @@ section .title::after {
   padding: 14px 20px 14px 20px;
   display: inline-block;
   position: relative;
-  font-family: "Playfair Display", cursive;
+  /* font-family: "Playfair Display", cursive; */
   color: #fff;
   margin-top: 15px;
   background: #292929;
@@ -301,7 +307,7 @@ section .title::after {
 }
 .quote-box2 h3 {
   font-size: 35px;
-  font-family: "Playfair Display", cursive;
+  /* font-family: "Playfair Display", cursive; */
   position: relative;
   padding-bottom: 20px;
   color: #c19d60;
@@ -311,7 +317,7 @@ section .title::after {
   font-style: italic;
   letter-spacing: 1px;
   padding: 10px 20px;
-  font-family: "Playfair Display", cursive;
+  /* font-family: "Playfair Display", cursive; */
   color: #fff;
   margin-bottom: 30px;
 }
@@ -324,7 +330,7 @@ section .title::after {
 
 .quote-box p {
   color: #fff;
-  font-family: "Playfair Display", cursive;
+  /* font-family: "Playfair Display", cursive; */
   font-size: 18px;
   line-height: 29px;
   display: -webkit-box;
@@ -393,7 +399,7 @@ section .title::after {
 }
 .section-title h4 {
   color: #c19d60;
-  font-family: "Playfair Display", cursive;
+  /* font-family: "Playfair Display", cursive; */
   font-style: italic;
   font-size: 18px;
   font-weight: 500;
@@ -403,7 +409,7 @@ section .title::after {
   font-size: 30px;
   font-weight: 900;
   color: #ffffff;
-  font-family: "Playfair Display";
+  /* font-family: "Playfair Display"; */
 }
 .open-time-dots {
   /* border: 1px solid red; */
@@ -438,7 +444,7 @@ section .title::after {
 .work-time2 .activity h4 {
   color: #fff;
   font-size: 19px;
-  font-family: "Playfair Display", cursive;
+  /* font-family: "Playfair Display", cursive; */
   padding-bottom: 10px;
 }
 .work-time2 .activity span {
@@ -484,7 +490,7 @@ section .title::after {
   border: 1px solid #c19d60;
   color: #fff;
   /* margin-top: 40px; */
-  font-family: "Playfair Display", cursive;
+  /* font-family: "Playfair Display", cursive; */
   font-weight: 600;
   font-size: 13px;
   transition: all 200ms linear;
@@ -541,7 +547,7 @@ section .title::after {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 10px 20px;
-  font-family: "Playfair Display", cursive;
+  /* font-family: "Playfair Display", cursive; */
   transition: all 500ms linear;
   border: 1px solid;
   color: #fff;
@@ -566,10 +572,12 @@ section .title::after {
   background-size: cover;
   background-position: left;
 }
-.why-us .section-title {
+.why-us .section-title,
+.said-about .section-title {
   margin-bottom: 30px;
 }
-.why-us .section-title h2 {
+.why-us .section-title h2,
+.said-about .section-title h2 {
   color: #292929;
 }
 .why-us-dots {
@@ -577,11 +585,11 @@ section .title::after {
   display: flex;
   justify-content: center;
 }
-.why-us li {
+.why-us-dots li {
   /* border: 1px solid red; */
-  border-radius: 50%;
-  width: 7px;
-  height: 7px;
+  border-radius: 50px;
+  width: 5px;
+  height: 5px;
   list-style: none;
   background-color: #000000;
   margin: 10px 6px;
@@ -640,7 +648,7 @@ section .title::after {
   top: 35%;
   left: 15%;
   text-align: center;
-  font-family: "Playfair Display", cursive;
+  /* font-family: "Playfair Display", cursive; */
   /* border: 1px solid red; */
 }
 .why-us-card .face-front-text {
@@ -649,7 +657,7 @@ section .title::after {
   top: 35%;
   /* left: 10%; */
   text-align: center;
-  font-family: "Playfair Display", cursive;
+  /* font-family: "Playfair Display", cursive; */
 }
 .why-us-card .face-front-text h2 {
   font-size: 22px;
@@ -681,7 +689,7 @@ section .title::after {
   border: 1px solid #db9423;
   color: rgb(0, 0, 0);
   margin-top: 40px;
-  font-family: "Playfair Display", cursive;
+  /* font-family: "Playfair Display", cursive; */
   font-weight: 600;
   font-size: 13px;
   transition: all 200ms linear;
@@ -944,6 +952,94 @@ section .title::after {
 }
 /* guests style */
 
+.said-about {
+  /* border: 1px solid red; */
+  position: relative;
+}
+.said-about::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 61px;
+  content: "";
+  border: 0;
+  background-color: #000000;
+  background-image: url(../images/vanner7-a.png);
+}
+
+.said-about-main {
+  /* border: 1px solid red; */
+  min-height: 100vh;
+  padding: 0 50px;
+  max-width: 1300px;
+  background-color: rgb(255, 255, 255);
+}
+.said-about-main .said-about-row {
+  border: 1px solid rgb(184, 184, 184);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.said-about-main .said-about-row .Customer-card {
+  /* border: 1px solid red; */
+  min-height: 300px;
+  width: calc((100% - 100px) / 3);
+  margin: auto;
+  margin-right: 50px;
+  /* background-color: #c19d60; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  font-size: 0;
+}
+.said-about-main .said-about-row .Customer-card:nth-child(3n) {
+  margin-right: 0px;
+}
+.Customer-card-cor {
+  border: 2px solid rgba(206, 206, 206, 0.61);
+  padding: 10px;
+}
+.said-about-main .said-about-row .Customer-card .Customer-card-img {
+  width: 100px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.said-about-main .said-about-row .Customer-card .Customer-card-img img {
+  width: 100%;
+  /* border: 1px solid red; */
+  border-radius: 50px;
+}
+.said-about-main .said-about-row .Customer-card h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.said-about-main .said-about-row .Customer-card p {
+  line-height: 30px;
+  font-size: 16px;
+}
+.said-about-main .said-about-row .Customer-card ul {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+  /* height: 50px; */
+  width: 100%;
+  margin: 10px auto;
+}
+.said-about-main .said-about-row .Customer-card ul li {
+  width: 5px;
+  height: 5px;
+  margin: 0 5px;
+  border-radius: 10%;
+  background-color: #c19d60;
+  list-style: none;
+}
 /* RWD */
 @media (max-width: 1400px) {
   .about .about-content .left .left-img2 {
@@ -1007,9 +1103,20 @@ section .title::after {
   .max-width {
     padding: 0 50px;
   }
+  .our-food .min-width {
+    padding: 0px;
+  }
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
 }
 
 @media (max-width: 947px) {
+  .said-about-main .said-about-row .Customer-card {
+    width: 100%;
+  }
+
   .open-time .open-time-left,
   .open-time-leftB {
     background-attachment: scroll;
@@ -1151,8 +1258,15 @@ section .title::after {
     font-size: 32px;
   }
 
+  .said-about-main {
+    padding: 0 30px;
+  }
+
   .max-width {
     padding: 0 23px;
+  }
+  .slick-dots {
+    display: none;
   }
 
   .home .home-content a button {
@@ -1175,6 +1289,11 @@ section .title::after {
 
   .food {
     width: 100%;
+  }
+
+  .quote-box,
+  .quote-box2 {
+    padding: 0;
   }
 }
 @media (max-width: 643px) {
@@ -1219,7 +1338,14 @@ section .title::after {
 .slick-next {
   font-size: 0;
 }
-.slick-prev {
-  /* border: 1px solid red;
-  left: 0px; */
+@media (max-width: 350px) {
+  .home .home-content a button {
+    font-size: 12px;
+  }
+  .said-about-main {
+    padding: 0 5px;
+  }
+  .why-us-row {
+    padding: 0 5px;
+  }
 }
