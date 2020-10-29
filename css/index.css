@@ -257,7 +257,7 @@ section .title::after {
 /* open-time */
 .open-time {
   /* border: 1px solid red; */
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-wrap: wrap;
 }
@@ -559,7 +559,7 @@ section .title::after {
 .why-us {
   max-width: 1300px;
   margin: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* min-height: 100vh; */
   background-image: url(../images/backimg/backimgC.png);
   background-size: cover;
@@ -601,7 +601,7 @@ section .title::after {
   width: calc((100% - 100px) / 3);
   margin-right: 50px;
   font-size: 0;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .why-us-card:nth-child(3n) {
   margin-right: 0px;
@@ -609,7 +609,7 @@ section .title::after {
 .why-us-card .face-front-A,
 .why-us-card .face-front-B,
 .why-us-card .face-front-C {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   position: relative;
   height: 400px;
@@ -672,7 +672,7 @@ section .title::after {
   /* max-width: 1300px; */
   width: 100%;
   text-align: center;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 .more-about-us a button {
   padding: 14px 20px;
