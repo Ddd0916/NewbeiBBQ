@@ -4,4 +4,11 @@ $(".food").slick({
     autoplay: true,
   autoplaySpeed: 1500,
   dots: true,
-  });
+});
+$(".work-time2").slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: true,
+autoplaySpeed: 1500,
+// dots: true,
+});
