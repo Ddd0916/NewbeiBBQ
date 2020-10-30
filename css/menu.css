@@ -458,6 +458,7 @@ section {
   height: 100%;
   border-radius: 50%;
   z-index: 90;
+  margin: auto;
 }
 .main-menu .max-width2 .menu-cor .menu-main .menu-card .menu-left img:hover {
   transform: scale(1.1);
@@ -466,7 +467,7 @@ section {
 
 .main-menu .max-width2 .menu-cor .menu-main .menu-card .menu-right {
   /* border: 1px solid red; */
-  padding: 10px;
+  padding: 10px 5px;
   width: 70%;
 }
 
@@ -512,10 +513,10 @@ p {
     height: 95vh;
   }
   .main-menu .max-width2 .menu-cor .menu-main .menu-card .menu-left {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     /* margin-top: 30px; */
-    padding-left: 15px;
+    /* padding-left: 5px; */
   }
   .max-width2 {
     padding: 0 70px;
@@ -524,6 +525,12 @@ p {
 @media screen and (max-width: 980px) {
   .max-width2 {
     padding: 0 80px;
+  }
+  .main-menu .max-width2 .menu-cor .main-title .main-title-cor,
+  .main-title-cor-B,
+  .main-title-cor-C,
+  .main-title-cor-D {
+    background-attachment: scroll;
   }
 }
 

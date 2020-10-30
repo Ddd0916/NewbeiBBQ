@@ -173,7 +173,12 @@ section .title::after {
 
 .slick-prev:before,
 .slick-next:before {
-  color: black;
+  color: #c19d60;
+}
+.slick-prev,
+.slick-next {
+  /* background-color: #ffffff;
+  border-radius: 50px; */
 }
 
 .slick-next .slick-arrow {
@@ -1259,9 +1264,6 @@ section .title::after {
   }
   .flavor-border2 {
     border-width: 20px 300px 0 0;
-  }
-  .slick-dots li button:before {
-    display: none;
   }
 }
 
