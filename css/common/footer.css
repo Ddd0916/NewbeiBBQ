@@ -5,6 +5,8 @@
   color: #fff;
   /* min-height: 279px; */
   width: 100%;
+  /* position: relative; */
+  /* position: sticky; */
 }
 .footer-cor {
   max-width: 1300px;

@@ -34,7 +34,7 @@
             <li><a href="#">blog</a></li>
             <li><a href="./about.html">About us</a></li>
             <li><a href="./store.html">Store</a></li>
-            <li><a href="./store.html">booking</a></li>
+            <li><a href="./booking.html">booking</a></li>
           </ul>
           <!-- </div> -->
 
@@ -58,14 +58,26 @@
           <div class="text-3">
             Our menu has <span class="typing">GOOD FOOD</span>
           </div>
-          <a href="./menu.html"
-            ><button>
-              Check out our Menu <i class="fas fa-arrow-right"></i></button
-          ></a>
+          <a
+            href="https://www.youtube.com/watch?v=Fp7idZFevSo"
+            class="venobox_custom"
+            data-vbtype="iframe"
+          >
+            <span><i class="fas fa-play"></i></span>
+          </a>
+        </div>
+        <div class="index-video">
+          <a
+            href="https://www.youtube.com/watch?v=Fp7idZFevSo"
+            class="venobox_custom"
+            data-vbtype="iframe"
+          >
+            <span><i class="fas fa-play"></i></span>
+          </a>
         </div>
         <div class="home-msk"></div>
       </div>
-      title
+
       <div class="banner-bottom"></div>
     </section>
     <!-- banner -->
@@ -519,6 +531,14 @@
     </div>
 
     <script src="./js/script.js"></script>
+    <script src="./js/venobox.min.js"></script>
+    <!-- 燈箱 -->
+    <script>
+      $(document).ready(function () {
+        $(".venobox_custom").venobox();
+      });
+    </script>
+    <!-- 燈箱 -->
     <script src="./js/slick.js"></script>
     <script src="./js/foods-lick.js"></script>
   </body>

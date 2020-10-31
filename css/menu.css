@@ -13,7 +13,7 @@
 }
 .banner {
   width: 100%;
-  height: 90vh;
+  min-height: 750px;
   background-image: url(../images/BBQ.jpg);
   /* background-size: cover; */
   background-position: center;
@@ -285,7 +285,7 @@ section {
   content: "";
   width: 100%;
   height: 61px;
-  background-color: black;
+  background-color: #222;
   border: transparent;
   background-image: url(../images/vanner7-a.png);
 }
