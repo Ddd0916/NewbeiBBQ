@@ -901,15 +901,17 @@ section .title::after {
   height: 61px;
   content: "";
   border: 0;
-  background-color: #000000;
+  background-color: #222;
   background-image: url(../images/vanner7-a.png);
 }
 
 .said-about-main {
   /* border: 1px solid red; */
   min-height: 100vh;
-  padding: 0 50px;
+  padding: 0 80px;
   max-width: 1300px;
+  margin: 0 auto;
+  min-height: 450px;
   background-color: rgb(255, 255, 255);
 }
 .said-about-main .said-about-row {
@@ -958,7 +960,7 @@ section .title::after {
 }
 
 .said-about-main .said-about-row .Customer-card p {
-  line-height: 30px;
+  line-height: 20px;
   font-size: 16px;
 }
 .said-about-main .said-about-row .Customer-card ul {
@@ -1051,6 +1053,9 @@ section .title::after {
 }
 
 @media (max-width: 947px) {
+  .said-about-main {
+    padding: 0 50px;
+  }
   .said-about-main .said-about-row .Customer-card {
     width: 100%;
   }
@@ -1245,6 +1250,9 @@ section .title::after {
   }
 }
 @media (max-width: 643px) {
+  .why-us-row {
+    padding: 0 30px;
+  }
 }
 @media (max-width: 590px) {
   .about .about-content .left img {

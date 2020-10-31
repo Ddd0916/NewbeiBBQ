@@ -109,7 +109,7 @@ $('.said-about-row').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 915,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -118,7 +118,7 @@ $('.said-about-row').slick({
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 570,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,

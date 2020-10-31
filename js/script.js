@@ -19,9 +19,6 @@ $(document).ready(function ()
                   
                  }
             })
-          
-          
-          
 
 // typing Animation script
           var typed = new Typed(".typing", {
@@ -38,6 +35,9 @@ $(document).ready(function ()
           });
 
 
-           
+          $('.back-top').click(function(){
+            $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+            return false;
+           });
         });
  
