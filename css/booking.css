@@ -32,3 +32,8 @@ section {
 .max-width {
   margin: auto;
 }
+
+#map {
+  border: 1px solid red;
+  height: 100vh;
+}

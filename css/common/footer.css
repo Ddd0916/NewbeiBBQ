@@ -1,17 +1,20 @@
 .footer {
   background: #222;
   bottom: 0;
-  z-index: -101;
+  z-index: -1;
   color: #fff;
   /* min-height: 279px; */
   width: 100%;
   /* position: relative; */
-  /* position: sticky; */
+  /* position: fixed;
+  bottom: 0; */
 }
 .footer-cor {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 80px;
+  position: relative;
+  z-index: 5;
 }
 /* ----=============== */
 .footer-a {
@@ -171,6 +174,8 @@
   max-width: 1300px;
   margin: auto;
   height: 100%;
+  position: relative;
+  z-index: 5;
 }
 .footer-c p {
   float: left;
@@ -190,6 +195,8 @@
   transition: all 200ms linear;
   color: #c19d60;
   cursor: pointer;
+  position: relative;
+  z-index: 5;
 }
 
 /* RWD */

@@ -63,7 +63,9 @@
       </div>
     </div>
     <!-- banner -->
-    <section></section>
+    <section>
+      <div id="map"></div>
+    </section>
     </section>
     <div class="footer">
       <div class="footer-cor">
@@ -121,6 +123,80 @@
     </div>
     </div>
     <!-- gotop -->
+    <script type="text/javascript">
+
+      var map;
+      
+    function initMap() {
+        var latlng = { lat: 25.046891, lng: 121.516602 }; // 台北車站的經緯度
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14, //放大的倍率
+            center: latlng //初始化的地圖中心位置
+        });
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map
+        });
+
+        var icon_path = "sample_icon/";
+        var icons={
+            pointer:{
+                name:'pointer',
+                icon:icon_path + "pointer.png"
+            },
+            star:{
+                name:'star',
+                icon:icon_path + "star.png"
+            },
+            wizard:{
+                name:'wizard',
+                icon:icon_path + "wizard.png"
+            },
+            zoom:{
+                name:'zoom',
+                icon:icon_path + "zoom.png"
+            }
+        };
+        //--------下面是呼叫一個新marker------
+        for (var i = 0; i <= 3; i++) {
+            lat = latlng.lat - 0.005;
+            lng = latlng.lng - 0.005;
+            latlng = { lat: lat, lng: lng};
+            console.log(lat.toFixed(6));
+            console.log(lng.toFixed(6));
+            console.log(i);
+            
+            if( i == 0){
+                var marker = new google.maps.Marker({
+                    position: latlng, //marker的放置位置
+                    icon:icons.pointer.icon,
+                    map: map
+                });
+            }else if( i== 1){
+                var marker = new google.maps.Marker({
+                    position: latlng, //marker的放置位置
+                    icon:icons.star.icon,
+                    map: map
+                });
+            }else if( i == 2){
+                var marker = new google.maps.Marker({
+                    position: latlng, //marker的放置位置
+                    icon:icons.wizard.icon,
+                    map: map
+                });
+            }else{
+                var marker = new google.maps.Marker({
+                    position: latlng, //marker的放置位置
+                    icon:icons.zoom.icon,
+                    map: map
+                });
+            }
+        }
+    }   //init_end
+    </script>
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZMN3vZ8YpPI3uaJKuIR31lgQq-5hBdA0&callback=initMap">
+      </script>
   
     <script>
        $('.back-top').click(function(){
