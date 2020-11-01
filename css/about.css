@@ -4,6 +4,7 @@
 @import url("./common/footer.css");
 @import url("./venobox.css");
 @import url("./common/loading.css");
+@import url("./common/gotop.css");
 
 * {
   margin: 0;

@@ -3,6 +3,7 @@
 @import url("./common/footer.css");
 @import url("./venobox.css");
 @import url("./common/loading.css");
+@import url("./common/gotop.css");
 
 * {
   margin: 0;
@@ -93,7 +94,7 @@
   top: -10px;
   bottom: -10px;
   right: -10px;
-  border: 1px solid;
+  border: 1px solid rgb(75, 75, 75);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2);
   z-index: 1;
@@ -970,9 +971,11 @@ section .title::after {
   .work-time .row h3::before {
     display: none;
   }
-}
+  .open-time .open-time-left,
+  .open-time-leftB {
+    background-attachment: scroll;
+  }
 
-@media (max-width: 1104px) {
   .open-time {
     min-height: 50vh;
   }

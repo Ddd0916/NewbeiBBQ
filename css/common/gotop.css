@@ -1,19 +1,101 @@
-#gotop {
-  position: fixed;
-  z-index: 90;
-  right: 30px;
-  bottom: 31px;
-  display: none;
-  width: 50px;
-  height: 50px;
-  color: #fff;
-  background: #33b5e5;
-  line-height: 50px;
-  border-radius: 50%;
-  transition: all 0.5s;
-  text-align: center;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+.arrow-up {
+  height: 40px;
+  width: 40px;
+  display: block;
+  border: 1px solid #666;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
+  overflow: hidden;
 }
-#gotop:hover {
-  background: #0099cc;
+
+.arrow-slide {
+  right: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  background: #666;
+  position: absolute;
+  display: block;
+  z-index: 999;
+}
+
+.left-arm {
+  position: absolute;
+  z-index: 999;
+  background-color: transparent;
+  top: 19px;
+  left: 3px;
+  width: 20px;
+  display: block;
+  transform: rotate(-45deg);
+}
+
+.left-arm:after {
+  content: "";
+  background-color: #666;
+  width: 20px;
+  height: 1px;
+  display: block;
+  border-radius: 1px;
+  transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
+  transform-origin: right center;
+  z-index: -1;
+}
+
+.right-arm {
+  position: absolute;
+  z-index: 999;
+  background-color: transparent;
+  top: 19px;
+  left: 17px;
+  width: 20px;
+  display: block;
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
+.right-arm:after {
+  content: "";
+  background-color: #666;
+  width: 20px;
+  height: 1px;
+  display: block;
+  border-radius: 1px;
+  transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
+  transform-origin: left center;
+  z-index: -1;
+}
+
+.arrow-up:hover {
+  transition: all 0.1s;
+}
+
+.arrow-up:hover .left-arm:after {
+  transform: rotate(-10deg);
+}
+
+.arrow-up:hover .right-arm:after {
+  transform: rotate(10deg);
+}
+
+.arrow-up:hover .arrow-slide {
+  transition: all 0.4s ease-in-out;
+  transform: translateY(200%);
+}
+
+.scroll-up {
+  margin-left: -100px;
+}
+
+.arrow-up {
+  margin-left: 100px;
+}
+
+.arrow-up,
+.scroll-up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
 }

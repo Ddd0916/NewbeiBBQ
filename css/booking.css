@@ -280,7 +280,7 @@ section {
   color: #fff;
   margin-top: 15px;
   font-weight: 500;
-  transition: all 200ms linear;
+  border: 1px solid rgba(206, 144, 144, 0);
 }
 /* ================ */
 

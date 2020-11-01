@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
-/* @import url("./common/nav.css"); */
+
 @import url("./common/nav2.css");
 @import url("./common/footer.css");
+@import url("./common/loading.css");
+@import url("./common/gotop.css");
 
 * {
   margin: 0;

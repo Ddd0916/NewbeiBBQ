@@ -25,14 +25,14 @@ var map;
 function initMap()
 {
     var position = {
-        lat: 40.689104, lng: -74.044599
+        lat: 24.947702, lng: 121.213704
       };
     
     
 
     map = new google.maps.Map(document.getElementById('issmap'), {
-      zoom: 10,
-      center: {lat: 40.689104, lng: -74.044599},
+      zoom: 15,
+      center: {lat: 24.947702, lng: 121.213704},
       styles: [
         {
             "featureType": "all",
