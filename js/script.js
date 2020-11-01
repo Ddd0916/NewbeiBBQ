@@ -38,6 +38,12 @@ $(document).ready(function ()
           $('.back-top').click(function(){
             $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
             return false;
-           });
+          });
+  
+          
+           setTimeout(function(){
+             $("#load").fadeOut(500)
+           },3000) ;
+          
         });
  

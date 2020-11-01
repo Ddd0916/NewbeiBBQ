@@ -3,6 +3,7 @@
 @import url("./common/nav2.css");
 @import url("./common/footer.css");
 @import url("./venobox.css");
+@import url("./common/loading.css");
 
 * {
   margin: 0;

@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="./css/slick.css" />
     <link rel="stylesheet" href="./css/slick-theme.css" />
     <link rel="stylesheet" href="./css/booking.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="./js/jquery-3.5.1.js"></script>
     
@@ -33,9 +39,9 @@
             <li><a href="./index.html">Home</a></li>
             <li><a href="./menu.html">Menu</a></li>
             <li><a href="#">blog</a></li>
-            <li><a href="./about.html" class="menu-on">About us</a></li>
+            <li><a href="./about.html" >About us</a></li>
             <li><a href="./store.html">Store</a></li>
-            <li><a href="./booking.html">booking</a></li>
+            <li><a href="./booking.html" class="menu-on">booking</a></li>
           </ul>
           <!-- </div> -->
           <div class="menu-btn">
@@ -49,23 +55,94 @@
     </nav>
     <!-- -------導覽列---- -->
 
-    <!-- banner -->
-    <div class="banner" id="banner">
-      <div class="max-width">
-        <div class="banner-mak"></div>
-        <div class="banner-content">
-          <h4>Enjoy your time in our restaurant with pleasure.</h4>
-          <h2>
-            <div class="mouse-scroll"></div>
-            About our Restaurant
-          </h2>
+
+    
+      <div id="issmap">
+        <div class="issmap-main"></div>
+        
+      </div>
+    <!-- loading -->
+    <div id="load">
+      <div>G</div>
+      <div>N</div>
+      <div>I</div>
+      <div>D</div>
+      <div>A</div>
+      <div>O</div>
+      <div>L</div>
+    </div>
+    <!-- loading -->
+    <section class="open-time">
+      <div class="open-time-row">
+        <div class="open-time-left">
+          <div class="time-left-title">
+            <h3>Get in touch</h3>
+            <span></span>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+          </div>
+          <from class="time-left-form">
+            <p>Name：
+              <input type="text" name="name" id="name" />
+            </p>
+            <p>Phone：
+              <input type="text" name="phone" id="phone" />
+            </p>
+            <p>Address：
+              <input type="text" name="address" id="address" />
+            </p>
+            
+            <textarea name="your-message" cols="40" rows="10" class="from-textarea" aria-invalid="false" placeholder="Your Message:"></textarea>
+
+            <p>
+              <input type="submit" name="button" id="button" value="Send Message" />
+            </p>
+          </from>
+        
+        </div>
+        <div class="open-time-right">
+        <div class="open-time-container">
+          <div class="open-time-text">
+            <div class="section-title">
+              <h4>Call For Reservations</h4>
+              <h2>Opening Hours</h2>
+            </div>
+            <ul class="open-time-dots">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <div class="work-time">
+              <div class="row">
+                <div class="work-time-left">
+                  <h3>Sunday to Tuesday</h3>
+                  <div class="hour">
+                    09:00
+                    <br />
+                    22:00
+                  </div>
+                </div>
+                <div class="work-time-right">
+                  <h3>Friday to Saturday</h3>
+                  <div class="hour">
+                    11:00
+                    <br />
+                    17:00
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="big-number">
+              <a href="tel:+7(666)540889527">+7(666)540889527</a>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
-    </div>
-    <!-- banner -->
-    <section>
-      <div id="map"></div>
     </section>
+
+  
     </section>
     <div class="footer">
       <div class="footer-cor">
@@ -122,81 +199,38 @@
       <p class="back-top">Back to top</p>
     </div>
     </div>
-    <!-- gotop -->
-    <script type="text/javascript">
-
-      var map;
+   <!-- ==========js====== -->
+   <script src="./js/map.js">
+   
+  </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZMN3vZ8YpPI3uaJKuIR31lgQq-5hBdA0&callback=initMap" async defer></script>
       
-    function initMap() {
-        var latlng = { lat: 25.046891, lng: 121.516602 }; // 台北車站的經緯度
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 14, //放大的倍率
-            center: latlng //初始化的地圖中心位置
-        });
-        var marker = new google.maps.Marker({
-            position: latlng,
-            map: map
-        });
-
-        var icon_path = "sample_icon/";
-        var icons={
-            pointer:{
-                name:'pointer',
-                icon:icon_path + "pointer.png"
-            },
-            star:{
-                name:'star',
-                icon:icon_path + "star.png"
-            },
-            wizard:{
-                name:'wizard',
-                icon:icon_path + "wizard.png"
-            },
-            zoom:{
-                name:'zoom',
-                icon:icon_path + "zoom.png"
-            }
-        };
-        //--------下面是呼叫一個新marker------
-        for (var i = 0; i <= 3; i++) {
-            lat = latlng.lat - 0.005;
-            lng = latlng.lng - 0.005;
-            latlng = { lat: lat, lng: lng};
-            console.log(lat.toFixed(6));
-            console.log(lng.toFixed(6));
-            console.log(i);
-            
-            if( i == 0){
-                var marker = new google.maps.Marker({
-                    position: latlng, //marker的放置位置
-                    icon:icons.pointer.icon,
-                    map: map
-                });
-            }else if( i== 1){
-                var marker = new google.maps.Marker({
-                    position: latlng, //marker的放置位置
-                    icon:icons.star.icon,
-                    map: map
-                });
-            }else if( i == 2){
-                var marker = new google.maps.Marker({
-                    position: latlng, //marker的放置位置
-                    icon:icons.wizard.icon,
-                    map: map
-                });
-            }else{
-                var marker = new google.maps.Marker({
-                    position: latlng, //marker的放置位置
-                    icon:icons.zoom.icon,
-                    map: map
-                });
-            }
-        }
-    }   //init_end
-    </script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZMN3vZ8YpPI3uaJKuIR31lgQq-5hBdA0&callback=initMap" async defer></script>
-      並記得將 YOUR_API_KEY 換成剛剛申請的 token。
-  
+   <!-- gotop -->
+   <script src="./js/script.js"></script>
+   <script>
+    $(document).ready(function(){
+       $("#button").click(function(){
+           if($("#name").val()==""){
+               alert("你尚未填寫姓名");
+               eval("document.form1['name'].focus()");       
+           }else if($("#phone").val()==""){
+               alert("你尚未填寫電話");
+               eval("document.form1['phone'].focus()");    
+           }else if($("#address").val()==""){
+               alert("你尚未填寫地址");
+               eval("document.form1['address'].focus()");       
+           }else{
+               document.form1.submit();
+           }
+       })
+       setTimeout(function(){
+             $("#load").fadeOut(500)
+           },3000) ;
+          
+    })
+   
+   </script>
     <script>
        $('.back-top').click(function(){
             $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
@@ -206,6 +240,6 @@
         <!-- gotop -->
     <script src="./js/slick.js"></script>
     <script src="./js/foods-lick.js"></script>
-    <script src="./js/script.js"></script>
+    
   </body>
 </html>

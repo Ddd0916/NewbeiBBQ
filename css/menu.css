@@ -2,6 +2,7 @@
 /* @import url("./common/nav.css"); */
 @import url("./common/nav2.css");
 @import url("./common/footer.css");
+@import url("./common/loading.css");
 * {
   margin: 0;
   padding: 0;
