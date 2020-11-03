@@ -12,6 +12,8 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="./js/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
   </head>
 
@@ -34,7 +36,7 @@
             <li><a href="./index.html">Home</a></li>
             <li><a href="./menu.html">Menu</a></li>
             <li><a href="#">blog</a></li>
-            <li><a href="./about.html" class="menu-on">About us</a></li>
+            <li><a href="./about.html" class="menu-on">About</a></li>
             <li><a href="./store.html">Store</a></li>
             <li><a href="./booking.html">booking</a></li>
           </ul>
@@ -119,7 +121,7 @@
     </section>
     <!-- -----about--------- -->
     <!-- -----run-number"--------- -->
-    <section class="run-number">
+    <section class="run-number" data-scroll>
       <div class="run-number-msk"></div>
       <div class="run-number-main">
         <div class="run-number-content">
@@ -146,6 +148,13 @@
       <div class="section-title">
         <h4>Our awesome team</h4>
         <h2>Met Our Chefs</h2>
+        <ul class="why-us-dots">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </div>
       <div class="our-chef-main">
         <div class="our-chef-row">
@@ -236,6 +245,7 @@
       <div class="section-title">
         <h4>What said about us</h4>
         <h2>Customer Reviews</h2>
+        
         <ul class="why-us-dots">
           <li></li>
           <li></li>
@@ -359,7 +369,7 @@
               <li><span>Write : </span><a href="mailto:yourmail@domain.com">yourmail@domain.com</a></li>
               <li><span>Find us : </span><a>USA 27TH Brooklyn NY</a></li>
             </ul>
-            <div> <a href="./booking.html">Get in Touch</a></div>
+            <div> <a href="./">Get in Touch</a></div>
           </div>
           <from class="footer-subscribe">
             <div class="footer-about-title">
@@ -387,7 +397,15 @@
            });
     </script>
     <script src="./js/slick.js"></script>
-   
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+          ScrollTrigger.init();
+      });
+    </script>  
+    <!-- runnumber -->
+    <script src="js/about.js">
+    </script>
+    <!-- runnumber -->
     <!-- 燈箱 -->
     <script>
       $(document).ready(function(){

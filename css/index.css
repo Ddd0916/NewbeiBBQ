@@ -2,7 +2,7 @@
 @import url("./common/nav2.css");
 @import url("./common/footer.css");
 @import url("./venobox.css");
-@import url("./common/loading.css");
+/* @import url("./common/loading.css"); */
 @import url("./common/gotop.css");
 
 * {
@@ -662,7 +662,7 @@ section .title::after {
 .why-us-dots li {
   /* border: 1px solid red; */
   border-radius: 50px;
-  width: 5px;
+  width: 4px;
   height: 5px;
   list-style: none;
   background-color: #000000;
@@ -684,8 +684,15 @@ section .title::after {
   width: calc((100% - 100px) / 3);
   margin-right: 50px;
   font-size: 0;
+  position: relative;
   /* border: 1px solid blue; */
+  transition: transform 1s;
+  transform-style: preserve-3d;
 }
+.why-us-card:hover {
+  transform: rotateY(180deg);
+}
+
 .why-us-card:nth-child(3n) {
   margin-right: 0px;
 }
@@ -694,11 +701,56 @@ section .title::after {
 .why-us-card .face-front-C {
   /* border: 1px solid red; */
   width: 100%;
-  position: relative;
-  height: 400px;
+  position: absolute;
+  backface-visibility: hidden;
+  height: 300px;
   background-size: cover;
   background-position: center;
+
+  transform-style: preserve-3d;
 }
+
+.face-back {
+  background-color: #222;
+  /* border: 3px solid red; */
+  font-size: 16px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+.face-back p {
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  color: #fff;
+  transform: translateZ(50px) scale(0.98);
+}
+
+.face-back-icon i {
+  transform: translateZ(50px) scale(0.98);
+  position: relative;
+  z-index: 5;
+  color: #c19d60;
+  font-size: 46px;
+  margin-bottom: 15px;
+  /* border: 1px solid red; */
+}
+.face-back-icon i::after {
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  content: "";
+  width: 90%;
+  height: 25%;
+  border-radius: 15px;
+  background-color: rgba(180, 180, 180, 0.384);
+}
+
 .why-us-card .face-front-A {
   background-image: url(../images/1.jpg);
 }
@@ -737,6 +789,8 @@ section .title::after {
   font-size: 22px;
   font-weight: 800;
   padding-bottom: 20px;
+  transform: scaleZ(2);
+  transform: translateZ(50px) scale(0.98);
 }
 .why-us-card .face-front-text h4 {
   display: inline-block;
@@ -745,6 +799,7 @@ section .title::after {
   font-size: 12px;
   letter-spacing: 2px;
   margin: 0 4px;
+  transform: translateZ(50px) scale(0.98);
 }
 
 .why-us-card .face-front img {
@@ -857,8 +912,8 @@ section .title::after {
   height: 61px;
   content: "";
   border: 0;
-  background-color: #222;
-  background-image: url(../images/vanner7-a.png);
+  /* background-color: #222; */
+  background-image: url(../images/vanner9.png);
 }
 
 .said-about-main {
@@ -878,7 +933,7 @@ section .title::after {
 }
 
 .said-about-main .said-about-row .Customer-card {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   min-height: 300px;
   width: calc((100% - 100px) / 3);
   margin: auto;
@@ -892,23 +947,40 @@ section .title::after {
   position: relative;
   padding: 10px;
   font-size: 0;
+  z-index: 5;
 }
 .said-about-main .said-about-row .Customer-card:nth-child(3n) {
   margin-right: 0px;
 }
 .Customer-card-cor {
   border: 2px solid rgba(206, 206, 206, 0.61);
-  padding: 10px;
+  /* padding: 10px; */
+  height: 400px;
+}
+.Customer-card-cor span {
+  font-size: 16px;
+}
+.Customer-card-text {
+  /* border: 1px solid red; */
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  overflow: hidden;
 }
 .said-about-main .said-about-row .Customer-card .Customer-card-img {
-  width: 100px;
+  width: 100%;
+  /* height: 100px; */
   margin: auto;
   margin-bottom: 15px;
+  border: 1px solid blue;
 }
 .said-about-main .said-about-row .Customer-card .Customer-card-img img {
   width: 100%;
-  /* border: 1px solid red; */
-  border-radius: 50px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid red;
+  /* border-radius: 50px; */
 }
 .said-about-main .said-about-row .Customer-card h4 {
   font-size: 18px;
@@ -918,6 +990,7 @@ section .title::after {
 .said-about-main .said-about-row .Customer-card p {
   line-height: 20px;
   font-size: 16px;
+  text-overflow: ellipsis;
 }
 .said-about-main .said-about-row .Customer-card ul {
   display: flex;
@@ -934,6 +1007,13 @@ section .title::after {
   border-radius: 10%;
   background-color: #c19d60;
   list-style: none;
+}
+#issmap {
+  /* border: 1px solid red; */
+  height: 550px;
+  width: 100%;
+  position: relative;
+  display: flex;
 }
 /* RWD */
 @media (max-width: 1400px) {

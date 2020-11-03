@@ -354,8 +354,9 @@ section {
 }
 .section-title {
   text-align: center;
-  /* margin-bottom: 50px; */
+  margin-bottom: 50px;
 }
+
 .section-title h4 {
   color: #c19d60;
   /* font-family: "Playfair Display", cursive; */
@@ -557,6 +558,7 @@ section {
   background: rgba(255, 255, 255, 0.2);
   z-index: 1;
   transform: scale(1);
+  border: 1px solid rgba(0, 0, 0, 0.281);
 }
 .run-number2 a:hover a::after {
   transform: scale(2);
@@ -661,12 +663,12 @@ section {
 }
 .why-us-dots li {
   /* border: 1px solid red; */
-  border-radius: 50px;
-  width: 5px;
+  border-radius: 50%;
+  width: 4px;
   height: 5px;
   list-style: none;
   background-color: #000000;
-  margin: 10px 6px;
+  margin: 6px 6px;
 }
 /* video */
 /* -----防爆餡------ */

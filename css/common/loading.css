@@ -21,6 +21,7 @@ body {
   z-index: 9999;
   display: flex;
   justify-content: center;
+  /* overflow: visible; */
 }
 
 #load div {

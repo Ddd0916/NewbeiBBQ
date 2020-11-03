@@ -22,15 +22,15 @@ $(document).ready(function ()
 
 // typing Animation script
           var typed = new Typed(".typing", {
-            strings: ["Hamburg", "Barbecue", "Dessert", "Drink"],
-            typeSpeed: 200,
-            backSpeed: 160,
+            strings: ["Hamburg",  "Dessert","Barbecue", "Drink"],
+            typeSpeed: 100,
+            backSpeed: 100,
             loop:true
           });
           var typed = new Typed(".typing-2", {
-            strings: ["Hamburg", "Barbecue", "Dessert", "Drink"],
-            typeSpeed: 200,
-            backSpeed: 160,
+            strings: ["Hamburg",  "Dessert","Barbecue", "Drink"],
+            typeSpeed: 100,
+            backSpeed: 100,
             loop:true
           });
 

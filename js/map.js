@@ -1,38 +1,33 @@
 
 var map;
 
-// function initMap() {
-//   var position = {
-//     lat: 25.0339031,
-//     lng: 121.5623212
-//     };
-    
-//   var map = new google.maps.Map(document.getElementById('issmap'), {
-//     zoom: 18,
-//       center: position
-    
-//   });
-//   var marker = new google.maps.Marker({
-//     position: position,
-//     map: map,
-//     animation: google.maps.Animation.BOUNCE
-//   });
-// }
+
 
 
 var map;
 
 function initMap()
 {
-    var position = {
-        lat: 24.947702, lng: 121.213704
-      };
+    // var position = {
+    //     lat: 25.033977, lng: 121.563998,
+        
+    // };
     
+    var position = {
+        lat: 25.033977,
+        lng: 121.563998,
+        draggable: true
+    };
+   
     
 
     map = new google.maps.Map(document.getElementById('issmap'), {
-      zoom: 15,
-      center: {lat: 24.947702, lng: 121.213704},
+        zoom: 15,
+        position : { lat: 25.033977, lng: 121.563998 },//positon 位置
+        map: map, //標示地圖
+        draggable: true,
+        title:'小明的位置',//說明文字(選擇性填寫)
+      center: {lat:25.033977, lng: 121.563998},
       styles: [
         {
             "featureType": "all",
@@ -204,7 +199,30 @@ function initMap()
     });
     var marker = new google.maps.Marker({
         position: position,
+        
         map: map,
-  animation: google.maps.Animation.BOUNCE
+        // label: 'No. 41, Section 2, Yanping Road',
+        animation: google.maps.Animation.BOUNCE,
+        draggable: true
+    });
+    var contentString = '<h1>No. 41, Section 2, Yanping Road</h1>';
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString,
+        position: position,
+        maxWidth:400,
+        pixelOffset: new google.maps.Size(0, 0) 
       });
+    infowindow.open(map, marker);
+    infowindow.addListener('domready',function() {
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click', function() {
+         
+        });
+      });
+      marker.addListener('click',function(){
+        infowindow.open(map, marker);
+      });
+    
+    
+    
   }
