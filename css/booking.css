@@ -163,7 +163,7 @@ section {
   left: 50px;
   right: 50px;
   bottom: 50px;
-  height: 80%;
+  height: 90%;
   border: 1px dashed rgba(255, 255, 255, 0.2);
   z-index: 2;
   box-shadow: 0px 0px 0px 50px rgba(255, 255, 255, 0.03);
@@ -357,9 +357,15 @@ section {
   .work-time .row {
     /* flex-direction: column; */
   }
+  .big-number a {
+    font-size: 24px;
+  }
 }
 @media screen and (max-width: 600px) {
   .open-time-row {
     padding: 0 15px;
+  }
+  .big-number a {
+    font-size: 16px;
   }
 }
