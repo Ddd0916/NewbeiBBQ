@@ -2,7 +2,7 @@
 @import url("./common/nav2.css");
 @import url("./common/footer.css");
 @import url("./venobox.css");
-/* @import url("./common/loading.css"); */
+@import url("./common/loading.css");
 @import url("./common/gotop.css");
 /* @import url("./common/banner.css"); */
 
@@ -904,7 +904,7 @@ section .title::after {
 /* guests style */
 
 .said-about {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   position: relative;
 }
 .said-about::before {
@@ -1012,10 +1012,30 @@ section .title::after {
   list-style: none;
 }
 .new-btn {
-  border: 1px solid red;
-  /* display: flex; */
+  /* border: 1px solid red; */
+  width: 100%;
   text-align: center;
-  align-items: center;
+  /* height: 100px; */
+  margin: 20px auto;
+}
+.new-btn-main {
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #db9423;
+  color: rgb(0, 0, 0);
+  margin-top: 40px;
+  /* font-family: "Playfair Display", cursive; */
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 200ms linear;
+  z-index: 5;
+  /* position: relative; */
+  cursor: pointer;
+  margin: 20px auto;
+}
+.new-btn-main:hover {
+  background: #c19d60;
+  color: rgb(255, 255, 255);
 }
 #issmap {
   /* border: 1px solid red; */
