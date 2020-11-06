@@ -1,6 +1,6 @@
 
 $(document).ready(function ()
-{
+{ 
            //toggle menu/navbar script
            $('.menu-btn').click(function(){
             $('.navbar .menu').toggleClass('active');
@@ -21,29 +21,10 @@ $(document).ready(function ()
             })
 
 // typing Animation script
-          var typed = new Typed(".typing", {
-            strings: ["Hamburg",  "Dessert","Barbecue", "Drink"],
-            typeSpeed: 100,
-            backSpeed: 100,
-            loop:true
-          });
-          var typed = new Typed(".typing-2", {
-            strings: ["Hamburg",  "Dessert","Barbecue", "Drink"],
-            typeSpeed: 100,
-            backSpeed: 100,
-            loop:true
-          });
+         
 
 
-          $('.back-top').click(function(){
-            $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
-            return false;
-          });
-  
-          
-           setTimeout(function(){
-             $("#load").fadeOut(500)
-           },3000) ;
-          
+        
+           
         });
  

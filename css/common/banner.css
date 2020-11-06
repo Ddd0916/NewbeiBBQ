@@ -1,70 +1,92 @@
 .banner {
   font-family: "Poppins", sans-serif;
 }
-.banner {
-  width: 100%;
-  height: 60vh;
-  background-image: url(../../images/03.jpg);
-  /* background-size: cover; */
-  background-position: center;
-  font-size: 16px;
+/* ---banner style */
+.home {
   position: relative;
+  min-height: 750px;
+  display: flex;
+  /* background-color: tomato; */
+  /* background-image: url(../images/backimg/2.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  /* border: 1px solid red; */
+  overflow: hidden;
 }
-.banner-mak {
+.home-row {
+  border: 1px solid red;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 150px;
+}
+.banner-inner {
+  /* border: 2px solid blue; */
+  width: 300px;
+}
+.banner-inner h2,
+.banner-inner p {
+  margin-bottom: 10px;
+  color: black;
+}
+.banner-inner p {
+  line-height: 30px;
+}
+.banner-inner.right {
+  text-align: right;
+  /* border: 1px solid red; */
+}
+
+.wrap-cor {
+  border: 4px solid yellow;
+  width: 100%;
   position: absolute;
-  content: "";
-  top: 0;
+  height: 100%;
+}
+.wrap {
+  border: 2px solid red;
+  height: 100vh;
+  /* overflow: hidden; */
+  width: 100%;
+  position: absolute;
+  top: 0px;
   left: 0;
+  z-index: 500;
+}
+.wrap .bg {
   width: 100%;
   height: 100%;
-  background-color: rgb(27, 14, 17);
-  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-size: cover;
+  transform: scale(1.1);
+  background-image: url(../../images/index-img/bg.png);
 }
-.banner-content {
-  /* border: 1px solid red; */
+.box-main-wrapper {
   width: 100%;
-  height: 60vh;
-  font-size: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* z-index: ; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 3px solid rgb(0, 0, 0);
+  /* z-index: 999; */
+  /* background-color: black; */
 }
-.banner-content h1 {
-  font-size: 50px;
-  color: crimson;
-  text-transform: uppercase;
-  width: 100%;
-  text-align: center;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
-  line-height: 0.7em;
-  outline: none;
-  animation: animate 5s linear infinite;
+.bg-color-1 {
+  border: 11px solid red;
+  background-color: #00000059;
+  position: absolute;
+  width: 55%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: all ease 2s;
 }
-@keyframes animate {
-  0%,
-  18%,
-  20%,
-  50.1%,
-  60%,
-  65.1%,
-  80%,
-  90.1%,
-  92% {
-    color: crimson;
-    text-shadow: none;
-  }
-  18%,
-  20%,
-  50.1%,
-  60%,
-  65%,
-  80.1%,
-  90%,
-  92.1%,
-  100% {
-    color: #fff;
-    text-shadow: 0 0 10px crimson, 0 0 20px crimson, 0 0 40px crimson,
-      0 0 60px crimson, 0 0 80px crimson, 0 0 160px crimson;
-  }
+.bgcolor-1:hover {
 }

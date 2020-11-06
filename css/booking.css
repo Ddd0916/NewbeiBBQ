@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
-/* @import url("./common/nav.css"); */
+
 @import url("./common/nav2.css");
 @import url("./common/footer.css");
 @import url("./common/loading.css");
@@ -24,6 +24,7 @@ section {
   width: 100%;
   position: relative;
   display: flex;
+  z-index: 998;
 }
 #issmap::after {
   position: absolute;
@@ -96,7 +97,7 @@ section {
 .time-left-form {
   /* border: 2px solid red; */
 }
-.time-left-form input[type="text"] {
+#form input[type="text"] {
   float: left;
   border: none;
   border: 1px solid #e1e1e1;
@@ -107,6 +108,7 @@ section {
   font-size: 12px;
   -webkit-appearance: none;
   font-family: "Poppins", sans-serif;
+  margin: 5px 0;
 }
 .time-left-form .from-textarea {
   margin: 15px 0;
@@ -125,7 +127,8 @@ section {
 .time-left-form p {
   margin-bottom: 15px;
 }
-.time-left-form input[type="submit"] {
+
+#form input[type="submit"] {
   cursor: pointer;
   background: #c19d60;
   padding: 10px 35px;
@@ -359,6 +362,9 @@ section {
   }
   .big-number a {
     font-size: 24px;
+  }
+  #form input[type="submit"] {
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 600px) {

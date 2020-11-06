@@ -9,11 +9,16 @@
     <link rel="stylesheet" href="./css/slick-theme.css" />
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/lightbox.min.css" />
+    <!-- -icon--- -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- -jq--- -->
     <script src="./js/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+     <!-- -Counter-Up--- -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <!-- -滑動觸發--- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+   
+      <!-- -燈箱--- -->
     <script src="js/lightbox-plus-jquery.min.js"></script>
   </head>
 
@@ -68,7 +73,7 @@
     </div>
     <!-- banner -->
     <!-- load -->
-    <div id="load">
+    <!-- <div id="load">
       <div>G</div>
       <div>N</div>
       <div>I</div>
@@ -76,7 +81,7 @@
       <div>A</div>
       <div>O</div>
       <div>L</div>
-    </div>
+    </div> -->
     <!-- load -->
     <!-- backtotop -->
     <a class="arrow-up">
@@ -120,6 +125,7 @@
       </div>
     </section>
     <!-- -----about--------- -->
+    <div class="counterA">1,234,567</div>
     <!-- -----run-number"--------- -->
     <section class="run-number" data-scroll>
       <div class="run-number-msk"></div>
@@ -129,10 +135,12 @@
           <h3>New Visitors Every Week</h3>
         </div>
         <div class="run-number-content">
+          
           <p class="count" data-value="12168">12168</p>
           <h3>Happy Customers Every Year</h3>
         </div>
         <div class="run-number-content">
+          
           <p class="count" data-value="172">172</p>
           <h3>Won Awards</h3>
         </div>
@@ -390,12 +398,15 @@
       <p class="back-top">Back to top</p>
     </div>
     </div>
+    <!-- =================== -->
+   
     <script>
        $('.back-top').click(function(){
             $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
             return false;
            });
     </script>
+    
     <script src="./js/slick.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function(){
@@ -403,6 +414,7 @@
       });
     </script>  
     <!-- runnumber -->
+    
     <script src="js/about.js">
     </script>
     <!-- runnumber -->

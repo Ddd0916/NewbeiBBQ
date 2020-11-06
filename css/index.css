@@ -2,8 +2,9 @@
 @import url("./common/nav2.css");
 @import url("./common/footer.css");
 @import url("./venobox.css");
-/* @import url("./common/loading.css"); */
+@import url("./common/loading.css");
 @import url("./common/gotop.css");
+/* @import url("./common/banner.css"); */
 
 * {
   margin: 0;
@@ -28,7 +29,8 @@
 /* ---banner style */
 .home {
   position: relative;
-  min-height: 750px;
+  /* min-height: 750px; */
+  min-height: 100vh;
   display: flex;
   /* background-color: tomato; */
   background-image: url(../images/backimg/2.jpg);
@@ -39,6 +41,7 @@
   font-family: "Ubuntu", sans-serif;
   /* border: 1px solid red; */
   overflow: hidden;
+  position: relative;
 }
 
 .home .home-msk {

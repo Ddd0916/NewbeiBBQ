@@ -297,6 +297,11 @@ section {
   z-index: 5;
   background-image: url(../images/vanner9.png);
 }
+
+.counterA {
+  font-size: 50px;
+  color: #33b5e5;
+}
 .run-number-msk {
   position: absolute;
   width: 100%;
