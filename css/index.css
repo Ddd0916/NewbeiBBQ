@@ -2,7 +2,7 @@
 @import url("./common/nav2.css");
 @import url("./common/footer.css");
 @import url("./venobox.css");
-@import url("./common/loading.css");
+/* @import url("./common/loading.css"); */
 @import url("./common/gotop.css");
 /* @import url("./common/banner.css"); */
 
@@ -929,14 +929,14 @@ section .title::after {
   background-color: rgb(255, 255, 255);
 }
 .said-about-main .said-about-row {
-  border: 1px solid rgb(184, 184, 184);
+  /* border: 1px solid rgb(184, 184, 184); */
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
 .said-about-main .said-about-row .Customer-card {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   min-height: 300px;
   width: calc((100% - 100px) / 3);
   margin: auto;
@@ -976,13 +976,13 @@ section .title::after {
   /* height: 100px; */
   margin: auto;
   margin-bottom: 15px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .said-about-main .said-about-row .Customer-card .Customer-card-img img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* border-radius: 50px; */
 }
 .said-about-main .said-about-row .Customer-card h4 {
@@ -1010,6 +1010,12 @@ section .title::after {
   border-radius: 10%;
   background-color: #c19d60;
   list-style: none;
+}
+.new-btn {
+  border: 1px solid red;
+  /* display: flex; */
+  text-align: center;
+  align-items: center;
 }
 #issmap {
   /* border: 1px solid red; */

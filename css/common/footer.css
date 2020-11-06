@@ -3,16 +3,13 @@
   bottom: 0;
   z-index: -1;
   color: #fff;
-  /* min-height: 279px; */
   width: 100%;
-  /* position: relative; */
-  /* position: fixed;
-  bottom: 0; */
 }
 .footer-cor {
+  /* border: 1px solid red; */
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 80px;
+  padding: 10px 80px;
   position: relative;
   z-index: 5;
 }
