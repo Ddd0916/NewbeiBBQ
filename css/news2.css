@@ -171,6 +171,8 @@ section {
 
 .blog {
   /* border: 1px solid red; */
+  max-width: 1300px;
+  margin: 0 auto;
 }
 .blog .blog-row {
   /* border: 1px solid blue; */
