@@ -17,7 +17,7 @@
 .banner {
   width: 100%;
   height: 90vh;
-  background-image: url(../images/news-img/11.jpg);
+  background-image: url(../images/shop-img/39.jpg);
   /* background-size: cover; */
   background-position: center;
   background-repeat: no-repeat;
@@ -62,18 +62,17 @@
   /* z-index: ; */
 }
 .banner-content h2 {
-  /* border: 1px solid red; */
   font-size: 40px;
   color: #fff;
   text-transform: uppercase;
   width: 100%;
   text-align: center;
-  /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0008); */
+
   line-height: 0.7em;
   outline: none;
-  font-family: "Playfair Display";
+
   font-weight: 900;
-  /* animation: animate 5s linear infinite; */
+
   position: relative;
   margin-top: 35px;
   line-height: 35px;
@@ -226,6 +225,41 @@ div.inner_block a i {
   /* border: 1px solid red; */
   /* height: 1250px; */
   width: 30%;
+}
+.blog-about-search {
+  width: 100%;
+  border: 1px solid #eee;
+  padding: 15px 10px;
+  font-size: 18px;
+  text-align: center;
+  /* font-family: "Playfair Display", cursive; */
+  margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+  background: #f9f9f9;
+  color: #292929;
+  min-height: 75px;
+  /* border: 1px solid red; */
+}
+.blog-about-search input {
+  float: left;
+  background: #fff;
+  font-size: 12px;
+  height: 45px;
+  padding: 0 20px;
+  width: 70%;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #eee;
+}
+.blog-about-search .search-submit {
+  border: none;
+  float: right;
+  height: 45px;
+  line-height: 45px;
+  width: 30%;
+  color: #fff;
+  background: #c19d60;
+  cursor: pointer;
 }
 .blog-about-title h4 {
   width: 100%;
@@ -580,6 +614,9 @@ div.inner_block a i {
   flex-grow: 1;
   color: #333;
 }
+.shop-item-price.off {
+  position: relative;
+}
 
 .container2 {
   padding: 15px;
@@ -618,10 +655,28 @@ div.inner_block a i {
   justify-content: center;
   align-items: center;
   background-color: #c19d60;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
 }
 .cart-icon i {
   font-size: 20px;
-  color: rgb(94, 94, 94);
+  color: rgb(255, 255, 255);
 }
 .container2.active {
   transform: translateX(0%);

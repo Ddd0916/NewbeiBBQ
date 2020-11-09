@@ -384,6 +384,41 @@ div.inner_block a i {
 .read-more:hover {
   background: #c19d60;
 }
+.blog-about-search {
+  width: 100%;
+  border: 1px solid #eee;
+  padding: 15px 10px;
+  font-size: 18px;
+  text-align: center;
+  /* font-family: "Playfair Display", cursive; */
+  margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+  background: #f9f9f9;
+  color: #292929;
+  min-height: 75px;
+  /* border: 1px solid red; */
+}
+.blog-about-search input {
+  float: left;
+  background: #fff;
+  font-size: 12px;
+  height: 45px;
+  padding: 0 20px;
+  width: 70%;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #eee;
+}
+.blog-about-search .search-submit {
+  border: none;
+  float: right;
+  height: 45px;
+  line-height: 45px;
+  width: 30%;
+  color: #fff;
+  background: #c19d60;
+  cursor: pointer;
+}
 /* RWD */
 @media screen and (max-width: 975px) {
   div.blog-row-left {

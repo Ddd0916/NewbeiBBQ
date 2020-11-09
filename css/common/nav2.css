@@ -90,12 +90,29 @@
 .navbar .max-width .navbar_B .menu {
   display: flex;
   /* display: block; */
-  /* position: relative; */
+
   transition: all 0.3s ease;
+  /* border: 1px solid red; */
+}
+.menus-son {
+  border: 1px solid rgb(26, 11, 11);
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+.menus-son.A {
+  position: absolute;
+  left: 0;
+}
+.menus-son li {
+  border: 1px solid blue;
 }
 .navbar .max-width .navbar_B .menu li {
   list-style: none;
   margin-left: 15px;
+  /* border: 1px solid red; */
+  padding: 0 10px;
+  position: relative;
 }
 .navbar .max-width .navbar_B .menu li a {
   color: #292929;
@@ -170,7 +187,9 @@
   transition: all 0.3s ease;
   color: #000000;
 }
-
+.menus {
+  border: 1px solid red;
+}
 /* RWD */
 @media (max-width: 948px) {
   .navbar .max-width .navbar_B .menu {

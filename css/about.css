@@ -185,6 +185,7 @@ section {
   margin: auto;
   min-height: 350px;
   display: flex;
+  /* flex-direction: column; */
 }
 .about-content .column.right {
   display: block;
@@ -207,15 +208,14 @@ section {
   margin-bottom: 15px;
 }
 .about-content .column.right p {
-  font-size: 13px;
+  font-size: 16px;
   line-height: 24px;
   padding-bottom: 10px;
   font-weight: 400;
   color: #5e646a;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  white-space: normal;
+
+  /* border: 1px solid red; */
+  height: 100%;
 }
 .about-content .column.right a {
   padding: 14px 20px 14px 35px;
@@ -692,10 +692,17 @@ section {
 #gotop:hover {
   background: #0099cc;
 }
-
+.index-video2 {
+  border: 3px solid #c19d60;
+  width: 30%;
+}
 /* <section class="about" id="about"> */
 /* RWD */
 @media (max-width: 983px) {
+  .index-video2 {
+    border: 3px solid #c19d60;
+    width: 50%;
+  }
   .our-chef-main .our-chef-row {
     padding: 0 60px;
   }
@@ -758,5 +765,9 @@ section {
   }
   section {
     padding: 60px 0px;
+  }
+  .index-video2 {
+    border: 3px solid #c19d60;
+    width: 80%;
   }
 }

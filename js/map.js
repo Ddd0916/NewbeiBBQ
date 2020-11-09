@@ -23,7 +23,7 @@ function initMap()
 
     map = new google.maps.Map(document.getElementById('issmap'), {
         zoom: 15,
-        maxZoom: 20,
+        // maxZoom: 20,
         scaleControl: false,
         // 限制使用者能縮放地圖的最小比例
         gestureHandling: 'greedy',

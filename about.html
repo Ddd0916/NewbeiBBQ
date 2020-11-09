@@ -46,9 +46,7 @@
             <li><a href="./booking.html">booking</a></li>
           </ul>
           <!-- </div> -->
-          <div class="navbar_E">
-            <i class="fas fa-shopping-cart"></i>
-          </div>
+          
           <div class="menu-btn">
             <i class="fas fa-bars"></i>
           </div>
@@ -72,17 +70,7 @@
       </div>
     </div>
     <!-- banner -->
-    <!-- load -->
-    <!-- <div id="load">
-      <div>G</div>
-      <div>N</div>
-      <div>I</div>
-      <div>D</div>
-      <div>A</div>
-      <div>O</div>
-      <div>L</div>
-    </div> -->
-    <!-- load -->
+    
     <!-- backtotop -->
     <a class="arrow-up">
       <span class="left-arm"></span>
@@ -244,9 +232,11 @@
         <h2>Get ready to start your exciting journey.</h2>
         <h3>Our restaurant will lead you through the amazing food world.</h2>
       </div>
-      <a href="https://www.youtube.com/watch?v=Fp7idZFevSo" class="venobox_custom" data-vbtype="iframe">
-        <span><i class="fas fa-play"></i></span>
-      </a>
+      <div class="index-video2">
+        <video class="about-video" width="100%" controls>
+          <source src="./images/1110.mp4" type="video/mp4">
+        </video>
+      </div>
     </section>
     <!-- video -->
     <section class="said-about">
@@ -343,6 +333,7 @@
         </div>
       </div>
     </section>
+    
     <div class="footer">
       <div class="footer-cor">
       <div class="footer-a">
@@ -420,17 +411,19 @@
     </script>
     <!-- runnumber -->
     <!-- 燈箱 -->
+    <script src="./js/venobox.min.js"></script>
     <script>
-      $(document).ready(function(){
-         $('.venobox_custom').venobox(); 
-         setTimeout(function () {
-          $("#load").fadeOut(500);
-        }, 3000);
-         });
+      $(document).ready(function () {
+        $(".venobox_custom").venobox({
+          framewidth: "700px", // default: ''
+          frameheight: "600px", // default: ''
+          infinigall: true,
+        });
+      });
     </script>
      <!-- 燈箱 -->
     <script src="./js/dot.js"></script>
-    <script src="./js/venobox.min.js"></script>
+    
     <script src="./js/foods-lick.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/gotop.js"></script>

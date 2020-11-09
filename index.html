@@ -38,9 +38,6 @@
           </ul>
           <!-- </div> -->
 
-          <div class="navbar_E">
-            <i class="fas fa-shopping-cart"></i>
-          </div>
           <div class="menu-btn">
             <i class="fas fa-bars"></i>
           </div>
@@ -56,18 +53,12 @@
           <div class="text-1">No. 41, Section 2, Yanping Road</div>
 
           <div class="text-2">Welcome to NewbieBBQ</div>
-          <div class="text-3">
-            Our menu has <span class="typing">GOOD FOOD</span>
-          </div>
+          <div class="text-3">We have <span class="typing">Passion</span></div>
         </div>
         <div class="index-video">
-          <a
-            href="./images/20201004_192634.mp4"
-            class="venobox_custom"
-            data-vbtype="iframe"
-          >
-            <span><i class="fas fa-play"></i></span>
-          </a>
+          <video class="about-video" width="100%" controls>
+            <source src="./images/1110.mp4" type="video/mp4" />
+          </video>
         </div>
         <div class="home-msk"></div>
       </div>
@@ -76,18 +67,10 @@
     </section>
 
     <!-- banner -->
+    <!-- <div class="chef-move" id="chef-move">
+      <img src="./images/Chef.svg" alt="" />
+    </div> -->
 
-    <!-- loading -->
-    <div id="load">
-      <div>G</div>
-      <div>N</div>
-      <div>I</div>
-      <div>D</div>
-      <div>A</div>
-      <div>O</div>
-      <div>L</div>
-    </div>
-    <!-- loading -->
     <!-- backtotop -->
     <a class="arrow-up">
       <span class="left-arm"></span>
@@ -294,6 +277,7 @@
     </section>
 
     <!-- Why people choose us -->
+
     <!-- Store and Book a table -->
     <div class="open-time">
       <div class="open-time-right">
@@ -388,7 +372,7 @@
         <div class="quote-box2">
           <h3>Our Store</h3>
           <h4>Want to order food home? Visit our online store.</h4>
-          <a href="./store.html" class="buy-btn"
+          <a href="./store2.html" class="buy-btn"
             >Buy Online <i class="fas fa-arrow-right"></i
           ></a>
         </div>
@@ -647,16 +631,24 @@
     <!-- ======js===== -->
     <script src="./js/jquery-3.5.1.js"></script>
     <!-- load -->
-    <script src="./js/map.js"></script>
+    <script>
+      var leftBtn = document.querySelectorAll(".main-left-btn > li");
+      var leftBotton = document.querySelectorAll(".left-btn");
+      var rightMenu = document.querySelectorAll(".main-right");
+      var index = 0;
+
+      for (let i = 0; i < leftBtn.length; i++) {
+        leftBtn[i].addEventListener("click", function () {
+          rightMenu[index].classList.remove("act");
+          index = i;
+          rightMenu[index].classList.add("act");
+        });
+      }
+    </script>
+
     <script>
       var typed = new Typed(".typing", {
-        strings: ["Hamburg", "Dessert", "Barbecue", "Drink"],
-        typeSpeed: 100,
-        backSpeed: 100,
-        loop: true,
-      });
-      var typed = new Typed(".typing-2", {
-        strings: ["Hamburg", "Dessert", "Barbecue", "Drink"],
+        strings: ["Service", "Health", "Fresh", "Tasty"],
         typeSpeed: 100,
         backSpeed: 100,
         loop: true,
@@ -667,14 +659,7 @@
       async
       defer
     ></script>
-    <script>
-      $(document).ready(function () {
-        $(".venobox_custom").venobox();
-        setTimeout(function () {
-          $("#load").fadeOut(500);
-        }, 1000);
-      });
-    </script>
+
     <!-- load -->
     <script src="./js/script.js"></script>
     <script src="./js/gotop.js"></script>
@@ -684,7 +669,11 @@
     <!-- 燈箱 -->
     <script>
       $(document).ready(function () {
-        $(".venobox_custom").venobox();
+        $(".venobox_custom").venobox({
+          framewidth: "700px", // default: ''
+          frameheight: "600px", // default: ''
+          infinigall: true,
+        });
       });
     </script>
     <!-- 燈箱 -->
