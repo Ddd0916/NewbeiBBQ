@@ -155,11 +155,13 @@ function displayCart()
             </h4>
 
         </div>
-        `
-           
+        `      
     }
+    $("#close").click(function () {
+        $(this).closest(".products").remove();
+    })
+    
 }
-
 
 onLoadCartNumber();
 displayCart();

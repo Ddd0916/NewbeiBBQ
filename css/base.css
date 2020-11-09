@@ -170,3 +170,14 @@ section {
   padding: 80px 0;
   background-color: #fff;
 }
+.show-cart li {
+  display: flex;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}

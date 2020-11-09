@@ -6,7 +6,15 @@ $(document).ready(function ()
             $('.navbar .menu').toggleClass('active');
             $('.menu-btn i').toggleClass('active');
           });
-          
+         
+      
+        $('.cart-icon').click(function(){
+          $('.container2').toggleClass('active');
+        });
+        $('.container2-title i').click(function(){
+          $('.container2').toggleClass('active');
+        });
+     
             $(window).scroll(function () {
                 if (this.scrollY > 90) {
                   $('.navbar_B').addClass("sticky");

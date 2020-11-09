@@ -2,7 +2,7 @@
 
 @import url("./common/nav2.css");
 @import url("./common/footer.css");
-@import url("./common/loading.css");
+/* @import url("./common/loading.css"); */
 * {
   margin: 0;
   padding: 0;
@@ -19,12 +19,21 @@ section {
 }
 
 #issmap {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   height: 550px;
   width: 100%;
   position: relative;
   display: flex;
-  z-index: 998;
+  z-index: 99;
+}
+.issmap-main {
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
 }
 #issmap::after {
   position: absolute;

@@ -16,17 +16,26 @@ function initMap()
     var position = {
         lat: 25.033977,
         lng: 121.563998,
-        draggable: true
+        // draggable: true
     };
    
     
 
     map = new google.maps.Map(document.getElementById('issmap'), {
         zoom: 15,
+        maxZoom: 20,
+        scaleControl: false,
+        // 限制使用者能縮放地圖的最小比例
+        gestureHandling: 'greedy',
+        // 設定是否呈現右下角街景小人
+        streetViewControl: false,
+        // 設定是否讓使用者可以切換地圖樣式：一般、衛星圖等
+        mapTypeControl: false,
+        fullscreenControl:false,
         position : { lat: 25.033977, lng: 121.563998 },//positon 位置
         map: map, //標示地圖
-        draggable: true,
-        title:'小明的位置',//說明文字(選擇性填寫)
+        // draggable: true,
+        //說明文字(選擇性填寫)
       center: {lat:25.033977, lng: 121.563998},
       styles: [
         {
@@ -205,7 +214,7 @@ function initMap()
         animation: google.maps.Animation.BOUNCE,
         draggable: true
     });
-    var contentString = '<h1>No. 41, Section 2, Yanping Road</h1>';
+    var contentString = '<h3>No. 41, Section 2, Yanping Road</h3>';
     var infowindow = new google.maps.InfoWindow({
         content: contentString,
         position: position,

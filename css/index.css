@@ -904,7 +904,7 @@ section .title::after {
 /* guests style */
 
 .said-about {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: relative;
 }
 .said-about::before {

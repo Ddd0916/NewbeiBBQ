@@ -35,7 +35,7 @@
             <li><a href="./menu.html" class="menu-on">Menu</a></li>
             <li><a href="./news.html">news</a></li>
             <li><a href="./about.html">About</a></li>
-            <li><a href="./store.html">Store</a></li>
+            <li><a href="./store2.html">Store</a></li>
             <li><a href="./booking.html">booking</a></li>
           </ul>
           <!-- </div> -->
@@ -678,20 +678,17 @@
     <script src="./js/gotop.js"></script>
     <script src="./js/store.js"></script>
     <script>
+      onload = "executeAfterloadedBody()";
       $(document).ready(function () {
         setTimeout(function () {
           $("#load").fadeOut(500);
-        }, 3000);
+        }, 2000);
       });
     </script>
+
     <script src="./js/script.js"></script>
     <script src="./js/slick.js"></script>
-    <script>
-      lightbox.option({
-        resizeDuration: 500,
-        wrapAround: true,
-      });
-    </script>
+
     <script>
       $(".back-top").click(function () {
         $("html,body").animate({ scrollTop: 0 }, "slow"); /* 返回到最頂上 */

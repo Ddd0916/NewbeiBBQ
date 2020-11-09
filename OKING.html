@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="./css/slick.css" />
     <link rel="stylesheet" href="./css/slick-theme.css" />
     <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/store.js" async></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="./js/jquery-3.5.1.js"></script>
-    
-    
   </head>
 
   <body>
@@ -34,7 +34,7 @@
             <li><a href="./menu.html">Menu</a></li>
             <li><a href="./news.html">news</a></li>
             <li><a href="./about.html" class="menu-on">About</a></li>
-            <li><a href="./store.html">Store</a></li>
+            <li><a href="./store2.html">Store</a></li>
             <li><a href="./booking.html">booking</a></li>
           </ul>
           <!-- </div> -->
@@ -44,7 +44,6 @@
           <div class="menu-btn">
             <i class="fas fa-bars"></i>
           </div>
-          
         </div>
       </div>
     </nav>
@@ -74,83 +73,140 @@
       <div>O</div>
       <div>L</div>
     </div>
-     <!-- load -->
-
-     <!-- backtotop -->
-     <a class="arrow-up">
+    <!-- load -->
+    <!-- backtotop -->
+    <a class="arrow-up">
       <span class="left-arm"></span>
       <span class="right-arm"></span>
       <span class="arrow-slide"></span>
     </a>
-     <!-- backtotop -->
-
-
-
+    <!-- backtotop -->
+    <section class="container content-section">
+      <h2 class="section-header">MUSIC</h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">Album 1</span>
+          <img class="shop-item-image" src="./images/index01.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$12.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Album 2</span>
+          <img class="shop-item-image" src="./images/index02.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$14.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container content-section">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$39.97</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">
+        PURCHASE
+      </button>
     </section>
     <div class="footer">
       <div class="footer-cor">
-      <div class="footer-a">
-        <div class="footer-logo"><img src="./images/logo.png" alt=""></div>
-        <div class="footer-icon">
-          <span class="footer-icon-title">Follow us: </span>
-          <ul class="footer-icon2">
-            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href=""><i class="fab fa-instagram"></i></a></li>
-           
-          </ul>
-        </div>
-      </div>
-      <div class="footer-b">
-        <div class="footer-main">
-          <div class="footer-about">
-            <div class="footer-about-title">
-              <h3>About us</h3>
-            </div>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
-            <div> <a href="./about.html">Reed more</a></div>
-          </div>
-          <div class="footer-info">
-            <div class="footer-about-title">
-              <h3>Contact info</h3>
-            </div>
-            
-            <ul>
-              <li><span>call : </span> <a href="tel:+7(666)540889527">+7(666)540889527</a></li>
-              <li><span>Write : </span><a href="mailto:yourmail@domain.com">yourmail@domain.com</a></li>
-              <li><span>Find us : </span><a>USA 27TH Brooklyn NY</a></li>
+        <div class="footer-a">
+          <div class="footer-logo"><img src="./images/logo.png" alt="" /></div>
+          <div class="footer-icon">
+            <span class="footer-icon-title">Follow us: </span>
+            <ul class="footer-icon2">
+              <li>
+                <a href=""><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-instagram"></i></a>
+              </li>
             </ul>
-            <div> <a href="./booking.html">Get in Touch</a></div>
           </div>
-          <from class="footer-subscribe">
-            <div class="footer-about-title">
-              <h3>Subscribe</h3>
+        </div>
+        <div class="footer-b">
+          <div class="footer-main">
+            <div class="footer-about">
+              <div class="footer-about-title">
+                <h3>About us</h3>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+              </p>
+              <div><a href="./about.html">Reed more</a></div>
             </div>
-            <p>Subscribe
-              Want to be notified when we launch a new template or an udpate. Just sign up and we'll send you a notification by email
-            </p>
-            <input type="email" name="EMAIL" placeholder="Your email address" required="" class="footer-subscribe-mail">
-            <input type="submit" value="Send" class="footer-subscribe-btn">
-          </from>
+            <div class="footer-info">
+              <div class="footer-about-title">
+                <h3>Contact info</h3>
+              </div>
+
+              <ul>
+                <li>
+                  <span>call : </span>
+                  <a href="tel:+7(666)540889527">+7(666)540889527</a>
+                </li>
+                <li>
+                  <span>Write : </span
+                  ><a href="mailto:yourmail@domain.com">yourmail@domain.com</a>
+                </li>
+                <li><span>Find us : </span><a>USA 27TH Brooklyn NY</a></li>
+              </ul>
+              <div><a href="./booking.html">Get in Touch</a></div>
+            </div>
+            <from class="footer-subscribe">
+              <div class="footer-about-title">
+                <h3>Subscribe</h3>
+              </div>
+              <p>
+                Subscribe Want to be notified when we launch a new template or
+                an udpate. Just sign up and we'll send you a notification by
+                email
+              </p>
+              <input
+                type="email"
+                name="EMAIL"
+                placeholder="Your email address"
+                required=""
+                class="footer-subscribe-mail"
+              />
+              <input type="submit" value="Send" class="footer-subscribe-btn" />
+            </from>
+          </div>
         </div>
       </div>
-      
+      <div class="footer-c">
+        <p>© Ddd0916 2020 / GOODGOODGOOD</p>
+        <p class="back-top">Back to top</p>
+      </div>
     </div>
-    <div class="footer-c">
-      <p>© Ddd0916 2020 / GOODGOODGOOD</p>
-      <p class="back-top">Back to top</p>
-    </div>
-    </div>
-
 
     <!-- =========== -->
     <script src="./js/gotop.js"></script>
     <script>
-       $('.back-top').click(function(){
-            $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
-            return false;
-           });
+      $(".back-top").click(function () {
+        $("html,body").animate({ scrollTop: 0 }, "slow"); /* 返回到最頂上 */
+        return false;
+      });
     </script>
     <script src="./js/slick.js"></script>
 
@@ -163,17 +219,17 @@
       });
     </script>
     <!-- load -->
-   
+
     <!-- 燈箱 -->
     <script>
-      $(document).ready(function(){
-         $('.venobox_custom').venobox(); 
-         });
+      $(document).ready(function () {
+        $(".venobox_custom").venobox();
+      });
     </script>
-     <!-- 燈箱 -->
+    <!-- 燈箱 -->
     <script src=""></script>
     <script src="./js/venobox.min.js"></script>
-    
+
     <script src="./js/script.js"></script>
   </body>
 </html>

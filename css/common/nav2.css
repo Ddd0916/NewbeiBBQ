@@ -167,7 +167,6 @@
 .navbar .max-width .navbar_B .menu.active {
   opacity: 1;
   left: 0%;
-
   transition: all 0.3s ease;
   color: #000000;
 }

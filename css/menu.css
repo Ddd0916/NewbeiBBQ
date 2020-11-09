@@ -15,7 +15,7 @@
 }
 .banner {
   width: 100%;
-  min-height: 750px;
+  min-height: 95vh;
   background-image: url(../images/BBQ.jpg);
   /* background-size: cover; */
   background-position: center;
