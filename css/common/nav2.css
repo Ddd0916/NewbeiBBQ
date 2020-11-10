@@ -116,7 +116,7 @@
 }
 .navbar .max-width .navbar_B .menu li a {
   color: #292929;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -191,6 +191,12 @@
   border: 1px solid red;
 }
 /* RWD */
+@media (min-width: 1440px) {
+  .navbar .max-width .navbar_B .menu li a {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 948px) {
   .navbar .max-width .navbar_B .menu {
     flex-direction: row;
