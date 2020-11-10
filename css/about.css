@@ -15,7 +15,7 @@
 }
 .banner {
   width: 100%;
-  min-height: 95vh;
+  min-height: 90vh;
   background-image: url(../images/10.jpg);
   /* background-size: cover; */
   background-position: center;
