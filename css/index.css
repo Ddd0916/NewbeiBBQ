@@ -65,8 +65,8 @@
 }
 
 .index-video {
-  border: 3px solid #c19d60;
-  border-radius: 5px;
+  /* border: 3px solid #c19d60; */
+  /* border-radius: 5px; */
   overflow: hidden;
   width: 50%;
   display: flex;
@@ -75,6 +75,11 @@
   /* width: 100%; */
   position: relative;
   z-index: 5;
+  font-size: 0;
+  box-shadow: inset 0px 0px 50px -11px #ababab, 5px 5px 59px 1px #d6d6d6;
+  -webkit-box-shadow: inset 0px 0px 50px -11px #ababab, 5px 5px 59px 1px #d6d6d6;
+  -moz-box-shadow: inset 0px 0px 50px -11px #ababab, 5px 5px 59px 1px #d6d6d6;
+  -o-box-shadow: inset 0px 0px 50px -11px #ababab, 5px 5px 59px 1px #d6d6d6;
 }
 
 .home .max-width {
