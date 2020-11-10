@@ -279,7 +279,6 @@ div.inner_block a i {
   margin: 0 4px 4px 0;
   /* font-family: "Playfair Display", cursive; */
   font-style: italic;
-  font-size: 11px !important;
 }
 .blog-tag.active {
   background-color: #c19d60;
@@ -329,7 +328,7 @@ div.inner_block a i {
 
 .blog-news h4 {
   margin-right: 10px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
   color: #666;
   position: relative;

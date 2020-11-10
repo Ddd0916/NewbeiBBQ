@@ -312,7 +312,6 @@ div.inner_block a i {
   margin: 0 4px 4px 0;
   /* font-family: "Playfair Display", cursive; */
   font-style: italic;
-  font-size: 11px !important;
 }
 .blog-tag.active {
   background-color: #c19d60;
