@@ -97,6 +97,7 @@
   color: #fff;
   position: relative;
   padding-bottom: 20px;
+  margin-top: 15px;
   z-index: 5;
 }
 
@@ -1398,7 +1399,7 @@ section .title::after {
   }
 
   .max-width {
-    /* padding: 0 23px; */
+    padding: 0 23px;
   }
   .slick-dots {
     display: none;
