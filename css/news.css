@@ -365,11 +365,12 @@ div.inner_block a i {
 }
 .blog-news p {
   margin-top: 15px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 24px;
   padding-bottom: 10px;
   font-weight: 400;
   color: #5e646a;
+  font-family: "Poppins", sans-serif;
 }
 .read-more {
   padding: 14px 20px 14px 20px;

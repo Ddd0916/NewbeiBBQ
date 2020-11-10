@@ -237,16 +237,54 @@ section {
 }
 .time-left-title p {
   margin-top: 15px;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 24px;
   padding-bottom: 10px;
   font-weight: 400;
   color: #5e646a;
+  font-family: "Poppins", sans-serif;
 }
-.time-left-form {
-  /* border: 2px solid red; */
-}
+
 #form input[type="text"] {
+  float: left;
+  border: none;
+  border: 1px solid #e1e1e1;
+  background: #f9f9f9;
+  width: 100%;
+  padding: 15px 20px;
+  color: #000;
+  font-size: 12px;
+  -webkit-appearance: none;
+  font-family: "Poppins", sans-serif;
+  margin: 5px 0;
+}
+#form input[type="date"] {
+  float: left;
+  border: none;
+  border: 1px solid #e1e1e1;
+  background: #f9f9f9;
+  width: 100%;
+  padding: 15px 20px;
+  color: #000;
+  font-size: 12px;
+  -webkit-appearance: none;
+  font-family: "Poppins", sans-serif;
+  margin: 5px 0;
+}
+#form input[type="time"] {
+  float: left;
+  border: none;
+  border: 1px solid #e1e1e1;
+  background: #f9f9f9;
+  width: 100%;
+  padding: 15px 20px;
+  color: #000;
+  font-size: 12px;
+  -webkit-appearance: none;
+  font-family: "Poppins", sans-serif;
+  margin: 5px 0;
+}
+#form select {
   float: left;
   border: none;
   border: 1px solid #e1e1e1;

@@ -77,7 +77,8 @@
           <div class="time-left-title">
             <h3>Get in touch</h3>
             <span></span>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+            <p>If you want to change the reservation time, please cancel the reservation and then rebook .If you don’t show up for no reason or arrive 10 minutes after the appointment time, it will be regarded as cancellation</p>
+            
           </div>
           
           <form id="form" method="post" action="">
@@ -90,12 +91,23 @@
               <input type="text" id="phone" name="phone"></input>
             </div>
             <div>
-              <label for="address">Address : </label>
-              <input type="text" id="address" name="address"></input>
+              <label for="date">Date : </label>
+              <input type="date" id="address" name="address"></input>
             </div>
             <div>
-              <label for="email">Email:</label>
-              <input type="text" id="email" name="email"></input>
+              <label for="time">Time : </label>
+              <input type="time" id="time" name="time"></input>
+            </div>
+            <div class="people">
+              <label for="address">How many? </label>
+              <select>
+                <option>人數</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                
+            </select>
             </div>
           
           <div>

@@ -208,7 +208,70 @@ section .title::after {
 .slick-next .slick-arrow {
   display: none;
 }
+.mouse-scroll {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 30px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 6px;
+}
 
+.mouse-scroll:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 5px;
+  height: 5px;
+  background: #c19d60;
+  border-radius: 8px;
+  animation: scroll-ani 1s linear infinite;
+}
+
+@keyframes scroll-ani {
+  0% {
+    top: 10px;
+    opacity: 0.8;
+  }
+  100% {
+    top: 25px;
+    opacity: 0.1;
+  }
+}
+
+@keyframes animate {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: rgb(235, 235, 235);
+    text-shadow: none;
+  }
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px rgb(151, 146, 147), 0 0 20px rgb(151, 150, 151),
+      0 0 40px rgb(175, 175, 175), 0 0 60px crimson, 0 0 80px crimson,
+      0 0 160px crimson;
+  }
+}
 .about .title::after {
   content: "best bbq";
 }
@@ -368,7 +431,7 @@ section .title::after {
 
 .quote-box p {
   color: #fff;
-  /* font-family: "Playfair Display", cursive; */
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   line-height: 29px;
   display: -webkit-box;
@@ -1219,10 +1282,12 @@ section .title::after {
   }
   .home .home-content .text-1 {
     padding-bottom: 0;
+    margin-bottom: 15px;
   }
 
   .home .home-content .text-2 {
     font-size: 40px;
+    line-height: 30px;
   }
 
   .home .home-content .text-3 {
